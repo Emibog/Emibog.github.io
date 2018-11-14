@@ -2,19 +2,35 @@
 body{
 	font-family: Impact;
 	font-size: 50px;
-	background-image: url(margo.jpg);
+	background-image: url(wallpaper.jpg);
 	margin: 0;
 	color: #c5c5c5;
-	text-shadow: 3px 3px black;
 	-webkit-animation: opac 0.7s;
 	-o-animation: opac 0.7s;
 	animation: opac 0.7s;
 }
 
-p{
-	margin: 150px 800px;
+p.hi{
+	/*background-color: rgba(248, 103, 120, 0.5); */
+	background-color: rgba(200,200,200, 0.5);
+	padding-left: 200px;
+	padding-top: 10px;
+	border-radius: 4px 50px 4px 50px;
+	height: 600px;
+	width: 620px;
+	margin: 150px 200px;
 	margin-bottom: 0;
 	font-size: 100px;
+	text-shadow: 4.5px 4.5px black;
+	box-shadow: 4px 5.5px  rgba(40,40,40, 0.5);
+}
+p.ans{
+	color: #AAAAAA;
+	font-size: 65px;
+	text-shadow: 3px 3px black;
+	display: inline-block;
+	margin: 0;
+	transform: translate(400px, -260px);
 }
 a{
 	text-decoration: none;
@@ -23,13 +39,16 @@ a{
 
 /* МЕНЮ  -----------------------------------------------------------------------------------------*/
 li{									
-	display: inline-block;	        
+	display: inline-block;
+	background-color: #afafaf;	        
 	-webkit-transition-duration: 0.2s;
 	-moz-transition-duration: 0.2s;
 	-o-transition-duration: 0.2s;
 	transition-duration: 0.2s;
 	-webkit-border-radius: 20px;
-	border-radius: 20px;
+	border-radius: 15px;
+	padding: 5px;
+	box-shadow: black 4px 4.5px;
 }									
 li:hover{							 
 	-webkit-transform: scale(1.2);
@@ -40,10 +59,11 @@ li:hover{
 	background-color: rgba(158,158,158, 0.6);	
 }									
 ul{						
-	list-style: none;	
-	margin-top: 350px;	
-	margin-left: 670px;	
-	margin-bottom: 0;	
+	list-style: none;
+	margin-top: -230px;
+	margin-left: 250px;	
+	margin-bottom: 0;
+	text-shadow: 3px 3px black;	
 }						
 .video{					
 	margin-right: 350px;
