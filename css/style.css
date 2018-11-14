@@ -6,7 +6,6 @@ body{
 	margin: 0;
 	color: #c5c5c5;
 	-webkit-animation: opac 0.7s;
-	-o-animation: opac 0.7s;
 	animation: opac 0.7s;
 }
 
@@ -30,6 +29,7 @@ p.ans{
 	text-shadow: 3px 3px black;
 	display: inline-block;
 	margin: 0;
+	-webkit-transform: translate(400px, -260px);
 	transform: translate(400px, -260px);
 }
 a{
@@ -40,21 +40,14 @@ a{
 /* МЕНЮ  -----------------------------------------------------------------------------------------*/
 li{									
 	display: inline-block;
-	background-color: #afafaf;	        
-	-webkit-transition-duration: 0.2s;
-	-moz-transition-duration: 0.2s;
-	-o-transition-duration: 0.2s;
+	background-color: #afafaf;
 	transition-duration: 0.2s;
-	-webkit-border-radius: 20px;
 	border-radius: 15px;
 	padding: 5px;
 	box-shadow: black 4px 4.5px;
 }									
 li:hover{							 
 	-webkit-transform: scale(1.2);
-	-moz-transform: scale(1.2);
-	-ms-transform: scale(1.2);
-	-o-transform: scale(1.2);
 	transform: scale(1.2);			 
 	background-color: rgba(158,158,158, 0.6);	
 }									
@@ -70,22 +63,6 @@ ul{
 }						
 /* анимация для фона  ---------------------------------------------------------------------------*/
 @-webkit-keyframes opac{
-	from{
-		opacity: 0;
-	}
-	to{
-		opacity: 1;
-	}
-}
-@-moz-keyframes opac{
-	from{
-		opacity: 0;
-	}
-	to{
-		opacity: 1;
-	}
-}
-@-o-keyframes opac{
 	from{
 		opacity: 0;
 	}
