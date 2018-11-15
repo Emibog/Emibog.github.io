@@ -13,7 +13,9 @@ body{
 
 p.hi{
 	/*background-color: rgba(248, 103, 120, 0.5);  Розовый цвет, если надо*/
+	color: rgb(240, 103, 120);
 	background-color: rgba(200,200,200, 0.5);
+	white-space: pre-wrap;
 	padding-left: 90px;
 	padding-top: 20px;
 	-webkit-border-radius: 4px 50px 4px 50px;
@@ -30,9 +32,9 @@ p.hi{
 	box-shadow: 4px 5.5px  rgba(40,40,40, 0.5);
 }
 p.ans{
-	color: #AAAAAA;
+	color: rgb(240, 103, 120);
 	font-size: 65px;
-	text-shadow: 3px 3px black;
+	text-shadow: 3.5px 3.5px black;
 	display: inline-block;
 	margin: 0;
 	-webkit-transform: translate(400px, -250px);
@@ -41,13 +43,13 @@ p.ans{
 	-o-transform: translate(400px, -250px);
 	transform: translate(400px, -250px);
 }
+
+/* КНОПКИ ----------------------------------------------------------------------------------------*/
 a{
 	text-decoration: none;
 	color: #c5c5c5;
 }
-
-/* МЕНЮ  ----------------------------------------------------------------------------------------*/
-li{									
+li{
 	display: inline-block;
 	background-color: #afafaf;
 	-webkit-transition-duration: 0.2s;
@@ -67,15 +69,15 @@ li:hover{
 	-moz-transform: scale(1.2);
 	-ms-transform: scale(1.2);
 	-o-transform: scale(1.2);
-	transform: scale(1.2);			 
-	background-color: rgba(158,158,158, 0.6);	
+	transform: scale(1.2);
+	background-color: rgb(240, 103, 120);	
 }									
 ul{						
 	list-style: none;
 	margin-top: -230px;
 	margin-left: 250px;	
 	margin-bottom: 0;
-	text-shadow: 3px 3px black;	
+	text-shadow: 3px 3px black;
 }						
 .video{					
 	margin-right: 350px;
