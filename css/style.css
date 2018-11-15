@@ -81,41 +81,10 @@ ul{
 .video{					
 	margin-right: 350px;
 }						
-/* анимация для фона  ---------------------------------------------------------------------------*/
-@-webkit-keyframes opac{
-	from{
-		opacity: 0;
-	}
-	to{
-		opacity: 1;
-	}
-}
-@-moz-keyframes opac{
-	from{
-		opacity: 0;
-	}
-	to{
-		opacity: 1;
-	}
-}
-@-o-keyframes opac{
-	from{
-		opacity: 0;
-	}
-	to{
-		opacity: 1;
-	}
-}
-@keyframes opac{
-	from{
-		opacity: 0;
-	}
-	to{
-		opacity: 1;
-	}
-}
 
-@media screen and (max-width: 1080px) {
+/*АДАПТАЦИЯ-----------------------------------------------------------------------------------------*/
+
+@media screen and (max-device-width: 360px) {
 	body{
 		background-image: url(wallpaper1920.jpg);
 	}
@@ -124,11 +93,11 @@ ul{
 		margin-left: 90px;
 	}
 	p.ans{
-	-webkit-transform: translate(290px, -250px);
-	-moz-transform: translate(290px, -250px);
-	-ms-transform: translate(290px, -250px);
-	-o-transform: translate(290px, -250px);
-	transform: translate(290px, -250px);
+		-webkit-transform: translate(290px, -250px);
+		-moz-transform: translate(290px, -250px);
+		-ms-transform: translate(290px, -250px);
+		-o-transform: translate(290px, -250px);
+		transform: translate(290px, -250px);
 	}
 	ul{
 		margin-left: 135px;
