@@ -121,6 +121,16 @@ ul{
 	}
 	p.hi{
 		margin-top: 700px;
-		margin-left: 140px;
+		margin-left: 90px;
+	}
+	p.ans{
+	-webkit-transform: translate(340px, -250px);
+	-moz-transform: translate(340px, -250px);
+	-ms-transform: translate(340px, -250px);
+	-o-transform: translate(340px, -250px);
+	transform: translate(340px, -250px);
+	}
+	ul{
+		margin-left: 190px;
 	}
 }
