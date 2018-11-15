@@ -153,6 +153,14 @@ body{
 	transform: translate(1840px, 870px);
 	/*margin: 870px 0 0 1840px;*/
 }
+@media screen and (max-device-width: 1080px){
+	.to_up{
+		transform: translate(915px, 1660px);
+	}
+	.to_up:hover{
+		transform: translate(915px, 1660px);
+	}
+}
 /* ЗАГОЛОВОК 365------------------------------*/
 .pornTitle365{
 	transform: translate(-100px, -100px);
