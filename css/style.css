@@ -84,9 +84,10 @@ ul{
 
 /*АДАПТАЦИЯ-----------------------------------------------------------------------------------------*/
 
-@media screen and (max-device-width: 360px) {
+@media screen and (max-device-width: 1080px) {
 	body{
 		background-image: url(wallpaper1920.jpg);
+		background-repeat: no-repeat;
 	}
 	p.hi{
 		margin-top: 700px;
