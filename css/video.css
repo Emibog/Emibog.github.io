@@ -68,23 +68,24 @@ body{
 	color: #303030FF;
 }
 @media screen and (max-device-width: 1080px){
+	.nav_div{
+		transition: height 0.3s;
+	}
 	.nav_div:hover{
-	border-radius: 0 0 20px 20px;
-	width: 270px;
-	height: 190px;
-}
-.Porno365_nav{
-	transform: translate(0px, 5px);
-}
+		width: 270px;
+		height: 190px;
+	}
+	.Porno365_nav{
+		transform: translate(0px, 5px);
+	}
 
-.Vtrahevip_nav{
+	.Vtrahevip_nav{
+		transform: translate(0px, 10px);
+	}
 
-	transform: translate(0px, 10px);
-}
-
-.Pornhub_nav{
-	transform: translate(0px, 15px);
-}
+	.Pornhub_nav{
+		transform: translate(0px, 15px);
+	}
 }
 	/* переход ----------------------------------------------*/
 
