@@ -10,7 +10,6 @@ body{
 	-o-animation: opac 0.7s;
 	animation: opac 0.7s;
 }
-
 p.hi{
 	/*background-color: rgba(248, 103, 120, 0.5);  Розовый цвет, если надо*/
 	color: rgb(240, 103, 120);
@@ -113,5 +112,15 @@ ul{
 	}
 	to{
 		opacity: 1;
+	}
+}
+
+@media screen and (max-width: 1080px) {
+	body{
+		background-image: url(wallpaper1920.jpg);
+	}
+	p.hi{
+		margin-top: 700px;
+		margin-left: 140px;
 	}
 }
