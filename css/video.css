@@ -67,6 +67,25 @@ body{
 .Pornhub_nav:hover{
 	color: #303030FF;
 }
+@media screen and (max-device-width: 1080px){
+	.nav_div:hover{
+	border-radius: 0 0 20px 20px;
+	width: 270px;
+	height: 190px;
+}
+.Porno365_nav{
+	transform: translate(0px, 5px);
+}
+
+.Vtrahevip_nav{
+
+	transform: translate(0px, 10px);
+}
+
+.Pornhub_nav{
+	transform: translate(0px, 15px);
+}
+}
 	/* переход ----------------------------------------------*/
 
 .menu{
@@ -247,6 +266,13 @@ div.porn365 li{
 	margin-top: 10px;
 	margin-left: 30px;
 }
+@media screen and (max-device-width: 1080px){
+	div.porn365 img{
+	border: 10px ridge orange;
+	width: 385px;
+	height: 250px;
+	}
+}
 
 /* ВИДЕО vtrahevip-----------------------------------------*/
 
@@ -261,6 +287,14 @@ div.vtrahevip li{
 	margin-top:10px;
 	margin-left: 90px;
 }
+@media screen and (max-device-width: 1080px){
+	div.vtrahevip img{
+		margin-left: -60px;
+		width: 380px;
+		height: 260px;
+	}
+}
+
 /* ВИДЕО pornhub --------------------------------------*/
 div.pornhub img{
 	border: 5px solid orange;
@@ -268,4 +302,11 @@ div.pornhub img{
 div.pornhub li{
 	margin-top: 40px;
 	margin-left: 90px;
+}
+@media screen and (max-device-width: 1080px){
+	div.pornhub img{
+		margin-left: -40px;
+		width: 370px;
+		height: 230px;
+	}
 }
