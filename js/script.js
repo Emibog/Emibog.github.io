@@ -1,6 +1,6 @@
-var src = 'http://cdn1ff2.porno365.xxx/uploads/posts/2018-11/chiksa-zashla-v-komnatu-k-lyubovnikam-i-upala-na-chlen-.jpg'
-var href = 'http://porno365.xxx/movie/15600'
-var site = 0;
+var src = 'http://vtrahevip.tv/uploads/posts/2018-11/1542234229_2292.jpg'
+var href = 'http://vtrahevip.tv/2018/11/15/dryannaya-devchonka-susy-gala-vereschala-kak-oslica-kogda-ee-dral-nacho-vidal.html'
+var site = 1;
 function addVideo(src, href, site) {
 var newel = document.createElement('li');
 var sil = document.createElement('a');
