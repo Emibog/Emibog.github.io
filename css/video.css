@@ -295,6 +295,8 @@ ul{
 
 div.vtrahevip img{
 	border: 10px solid #AFAFAF;
+	width: 450px;
+	height: 320px;
 }
 div.vtrahevip li{
 	margin-top:10px;
@@ -310,7 +312,10 @@ div.vtrahevip li{
 
 /* ВИДЕО pornhub --------------------------------------*/
 div.pornhub img{
-	border: 5px solid orange;
+	border: 10px solid orange;
+	width: 450px;
+	height: 270px;
+	margin-left: 10px;
 }
 div.pornhub li{
 	margin-top: 40px;
