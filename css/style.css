@@ -84,9 +84,9 @@ ul{
 
 /*АДАПТАЦИЯ-----------------------------------------------------------------------------------------*/
 
-@media screen and (max-device-width: 1080px) {
+@media screen and (max-device-width: 360px) {
 	body{
-		background-image: url(wallpaper1920.jpg);
+		background-image: url(wallpaperForMobile.jpg);
 		background-repeat: no-repeat;
 	}
 	p.hi{
@@ -102,5 +102,32 @@ ul{
 	}
 	ul{
 		margin-left: 135px;
+	}
+}
+@media screen and (max-device-width: 976px) {
+	body{
+		background-image: url(wallpaperForLaptop.jpg);
+		background-repeat: no-repeat;
+	}
+	p.hi{
+		margin-top: 50px;
+		margin-left: 150px;
+		padding-left: 180px;
+		font-size: 0.9em;
+		width: 520px;
+		height: 330px;
+	}
+	p.ans{
+		-webkit-transform: translate(250px, -340px);
+		-moz-transform: translate(250px, -340px);
+		-ms-transform: translate(590px, -340px);
+		-o-transform: translate(250px, -340px);
+		transform: translate(390px, -200px);
+		font-size: 0.8em;
+	}
+	ul{
+		margin-top: -210px;
+		margin-left: 175px;
+		font-size: 0.8em;
 	}
 }
