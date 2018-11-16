@@ -84,7 +84,7 @@ ul{
 
 /*АДАПТАЦИЯ-----------------------------------------------------------------------------------------*/
 
-@media screen and (max-device-width: 360px) {
+@media screen and (max-device-width: 360px) { 			/*ТЕЛЕФОН------------*/
 	body{
 		background-image: url(wallpaperForMobile.jpg);
 		background-repeat: no-repeat;
@@ -104,13 +104,13 @@ ul{
 		margin-left: 135px;
 	}
 }
-@media screen and (max-device-width: 976px) {
+@media screen and (max-device-width: 976px) { 			/* ПЛАНШЕТ----------*/
 	body{
 		background-image: url(wallpaperForLaptop.jpg);
 		background-repeat: no-repeat;
 	}
 	p.hi{
-		margin-top: 50px;
+		margin-top: 35px;
 		margin-left: 150px;
 		padding-left: 180px;
 		font-size: 0.9em;
@@ -126,7 +126,7 @@ ul{
 		font-size: 0.8em;
 	}
 	ul{
-		margin-top: -210px;
+		margin-top: -250px;
 		margin-left: 175px;
 		font-size: 0.8em;
 	}
