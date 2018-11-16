@@ -18,4 +18,4 @@ console.log(src);
 
 
 var el = document.getElementById('porno365_for_nav');
-console.log(el);
+console.log(el.getAttribute('class'));
