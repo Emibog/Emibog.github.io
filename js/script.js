@@ -15,3 +15,7 @@ imgfo.setAttribute('src', src);
 console.log(src);
 }
 //addVideo(src, href, site);
+
+
+var el = document.getElementById('porno365_for_nav');
+console.log(el);
