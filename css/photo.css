@@ -61,4 +61,22 @@ a{
 	background-color: white;
 	height: 0;
 }
-
+.phot{
+	width: 20em;
+	height: 460px;
+	margin: 0; 
+	margin-left: 100px; 
+	margin-top: 70px; 
+	display: inline-block; 
+	background-color: rgba(135, 135, 135, 0.7); 
+	border: ridge 4.5px #707070;
+	overflow: hidden;
+}
+.atl{
+	margin-top: 5px; 
+	text-align: center; 
+	font-size: 1.3em
+}
+img{
+	width: 20em;
+}
