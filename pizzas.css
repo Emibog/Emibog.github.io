@@ -1,0 +1,115 @@
+html, body{
+	margin: 0px;
+	font-family: 'Times New Romaan';
+	font-weight: bold;
+	letter-spacing: 1px;
+	font-size: 22px;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+nav{
+	display: inline-block;
+	margin: 0; 
+	width: 250px;
+	height: 100%;
+	background-image: url(bg-menu.jpg);
+	background-size: 100%;
+	float: left;
+	z-index: 2;
+	position: fixed;
+}
+.pizzas_button{
+	color: #e7c308;
+}
+a{
+	color: white;
+	text-decoration: none;
+}
+a:hover{
+	color: #e7c308;
+}
+ul{
+	padding: 0;
+	margin-top: 100px;
+	color: white;
+	list-style-type: none;
+}
+li{
+	margin-top: 10px;
+	text-align: center;
+}
+#logo{
+	margin: 60px 0 0 30px ;
+}
+hr{
+	border: 0;
+	width: 190px;
+	height: 3px;
+	background-color: #e7c308;
+	margin-bottom: 0px;
+}
+footer{
+	margin-top: 300px;
+	font-family: Arial; 
+	font-size: 15px; 
+	letter-spacing: 0px;
+}
+footer p{ 
+	margin-left: 32px; 
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+footer a{ 
+	margin-left: 80px; 
+	color: #A89A7B;
+}
+.content{
+	position: fixed;
+	margin: 0;
+	display: inline-block;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	margin-left: 250px;
+}
+.menu{
+	position: relative;
+	margin-left: 250px;
+	margin-top: 100px;
+}
+.pizzas_text{
+	color: white;
+	letter-spacing: 0px;
+	width: 200px;
+	text-align: center;
+	font-size: 40px;
+	margin-left: 100px;
+	background-color: black;
+	border-left: 5px solid #F0BC45;
+}
+.menu_pizza{
+	background-color: #FBF6EBFF;
+	width: 1653px;
+	height: 1100px;
+}
+.image{
+	padding: 50px;
+}
+@media screen and (max-device-width: 375px) {
+	footer{
+	margin-top: 700%;
+}
+	ul{
+	font-size: 40px;
+}
+	.menu_pizza{
+		background-color: #FBF6EBFF;
+		width: 163%;
+		height: 1100px;
+	}
+	.image{
+		padding: 10px;
+	}
+}
