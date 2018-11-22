@@ -115,7 +115,7 @@ footer a{
 		font-size: 29px;
 	}
 }
-@media screen and (min-device-width: 640px) and (max-device-width: 641px) {
+@media screen and (min-device-width: 600px) and (max-device-width: 700px) {
 	#logo{
 		margin: 30px 0 0 30px;
 		transform: scale(0.7);
