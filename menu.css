@@ -133,12 +133,16 @@ footer a{
 	margin-top: 350%;
 	}
 }
-@media screen and (min-device-width: 660px) and (max-device-width: 661px) {
-	footer{
-		margin-top: 20%;
+@media screen and (min-device-width: 640px) and (max-device-width: 641px) {
+	#logo{
+		margin: 30px 0 0 30px;
+		transform: scale(0.7);
+	}
+footer{
+		margin-top: 10%;
 	}
 	ul{
-		margin-top: 30px;
-		font-size: 20px;
+		margin-top: 20px;
+		font-size: 15px;
 	}
 }

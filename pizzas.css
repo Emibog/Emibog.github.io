@@ -113,3 +113,12 @@ footer a{
 		padding: 10px;
 	}
 }
+@media screen and (min-device-width: 640px) and (max-device-width: 641px) {
+footer{
+		margin-top: 130%;
+	}
+	ul{
+		margin-top: 50px;
+		font-size: 20px;
+	}
+}
