@@ -9,7 +9,8 @@ html, body{
 }
 nav{
 	display: inline-block;
-	margin: 0; 
+	margin: 0;
+	position: fixed;
 	width: 250px;
 	height: 100%;
 	background-image: url(bg-menu.jpg);
