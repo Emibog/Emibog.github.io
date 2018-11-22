@@ -172,7 +172,7 @@ footer a{
 }
 @media screen and (max-device-width: 375px) {
 	footer{
-		margin-top: 430%;
+		margin-top: 350%;
 	}
 	ul{
 		font-size: 30px;
