@@ -95,12 +95,12 @@ footer a{
 }
 @media screen and (max-device-width: 375px) {
 	.content p{
-		font-size: 70px;
-		margin: 700px 0 0 70px;
+		font-size: 65px;
+		margin: 700px 0 0 40px;
 	}
 	.piza{
 		font-size: 150px;
-		margin: 800px 0 0 150px;
+		margin: 800px 0 0 100px;
 	}
 	.content{
 		background-repeat: no-repeat;
