@@ -128,6 +128,12 @@ footer a{
 	margin: 0;
 	margin-top: 30px;
 }
+.oneitem iframe{
+	width: 100%;
+	height: 430px;
+	margin: 0;
+	margin-top: 30px;
+}
 .fot{
 	color: white;
 	margin-top: -6px;
