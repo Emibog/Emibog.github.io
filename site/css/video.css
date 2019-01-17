@@ -7,9 +7,6 @@ body{
 /* МЕНЮ -------------------------------------------------------*/
 	
 	/* список ----------------------------------------------*/
-h1{
-	display: inline-block;
-}
 .nav_site{
 	margin: 0;
 	color: #424242FF;
@@ -44,7 +41,7 @@ h1{
 	-webkit-border-radius: 0 0 20px 20px;
 	-moz-border-radius: 0 0 20px 20px;
 	border-radius: 0 0 20px 20px;
-	width: 850px;
+	width: 900px;
 	height: 45px;
 	background-color: gray;
 }
@@ -53,7 +50,7 @@ h1{
 	color: #424242FF;
 	font-size: 2.3em;
 	margin-top: 0;
-	margin-left: 40px;
+	margin-left: 10px;
 	-webkit-transform: translate(280px, -45px);
 	-moz-transform: translate(280px, -45px);
 	-ms-transform: translate(280px, -45px);
@@ -177,7 +174,7 @@ h1{
 	color: #424242FF;
 	font-size: 2.3em;
 	margin-top: 0;
-	margin-left: 40px;
+	margin-left: 10px;
 	-webkit-transform: translate(140px, -45px);
 	-moz-transform: translate(140px, -45px);
 	-ms-transform: translate(140px, -45px);
@@ -192,7 +189,7 @@ h1{
 	color: #424242FF;
 	font-size: 2.3em;
 	margin-top: 0;
-	margin-left: 30px;
+	margin-left: 10px;
 	-webkit-transform: translate(170px, -45px);
 	-moz-transform: translate(170px, -45px);
 	-ms-transform: translate(170px, -45px);
@@ -242,37 +239,107 @@ h1{
 		transform: translate(915px, 1660px);
 	}
 }
-
-/* 365 -----------------------------------------*/
-.porno365{
-	display: block;
-	background-color: #000;
-	margin: 0 auto;
-}
-.porn365{
-	padding: 0;
+/* ЗАГОЛОВОК 365------------------------------*/
+.pornTitle365{
+	-webkit-transform: translate(-100px, -100px);
+	-moz-transform: translate(-100px, -100px);
+	-ms-transform: translate(-100px, -100px);
+	-o-transform: translate(-100px, -100px);
+	transform: translate(-100px, -100px);
+	background: -webkit-gradient( linear, left top, left bottom, color-stop(50%, #77675f), to(#351b04));
+	background: -webkit-linear-gradient( #77675f 50%, #351b04);
+	background: -moz-linear-gradient( #77675f 50%, #351b04);
+	background: -o-linear-gradient( #77675f 50%, #351b04);
+	background: linear-gradient( #77675f 50%, #351b04);
+	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+  	-webkit-text-stroke-width: 1.5px;
+	-webkit-text-stroke-color: orange;
 	margin: 0;
+	margin-left: 10px; 
+	font-size: 80px;
+	display: inline-block;
+	-webkit-animation: trans 0.7s;
+	-o-animation: trans 0.7s;
+	-moz-animation: trans 0.7s;
+	animation: trans 0.7s;
+	-webkit-transform: translate(0px, 0px);
+	-moz-transform: translate(0px, 0px);
+	-ms-transform: translate(0px, 0px);
+	-o-transform: translate(0px, 0px);
+	transform: translate(0px, 0px);
+}
+.hr_for_365{
+	width: 0%;
+	height: 3px;
+	border: 0;
+	background-color: orange;
+	-webkit-animation: for_hr 0.7s 0.7s;
+	-o-animation: for_hr 0.7s 0.7s;
+	-moz-animation: for_hr 0.7s 0.7s;
+	animation: for_hr 0.7s 0.7s;
 	width: 100%;
+}
+/* 365 -----------------------------------------*/
+.porn365{
 	background-color: #000;
-	align-content: center;
+	height: 100%;
+}
+a{
+	display: inline-block;
+	background-color: white;
+	height: 0;
 }
 	/*vtrahevip ------------------------------------*/
-
-.vtrahetv{
-	display: block;
-	margin: 0 auto;
+.vtrahevip_h1{
+	background: grey;
+	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+  	-webkit-text-stroke-width: 2px;
+	-webkit-text-stroke-color: black;
+	margin: 0; 
+	font-size: 80px;
+	display: inline-block;
+	margin-left: 20px;
+	letter-spacing: 1px;
+}
+.vtrahevip{
 	background-color: #DBDBDB;
 }
-
-.vtrahe{
-	padding: 0;
-	padding-top: 10px;
-	margin: 0;
+.hr_for_vtrahevip{
+	width: 0%;
+	height: 3px;
+	border: 0;
 	width: 100%;
-	background-color: #DBDBDB;
-	align-content: center;
+	background-color: #828282;
 }
-
+	/* pornhub--------------------------------------------*/
+.white_porn{
+	background: white;
+	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+  	-webkit-text-stroke-width: 0px;
+	-webkit-text-stroke-color: black;
+	display: inline-block;
+	margin-top: 30px;
+}
+.orange_hub{
+	background: orange;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	display: inline-block;
+	margin-top: 30px;
+}
+.pornhub_h1{
+	letter-spacing: 1px;
+	margin: 0;
+	margin-left: 20px;
+	font-size: 100px;
+}
+.pornhub{
+	background-color: #1C1C1C;
+}
 
 
 /*ANIMATION--------------------------------------------------------------*/
@@ -350,5 +417,68 @@ h1{
 	}
 	to{
 		width: 100%;
+	}
+}
+/*ВИДЕО 365---------------------------------------------------------------*/
+li{						
+	display: inline-block;
+	list-style: none;	
+}
+div.porn365 img{
+	border: 10px ridge orange;
+	width: 541px;
+	height: 318px;
+}
+div.porn365 li{
+	margin-top: 10px;
+	margin-left: 30px;
+}
+@media screen and (max-device-width: 1080px){
+	div.porn365 img{
+	border: 10px ridge orange;
+	width: 385px;
+	height: 230px;
+	}
+}
+
+/* ВИДЕО vtrahevip-----------------------------------------*/
+
+ul{
+	margin-bottom: 0;
+}
+
+div.vtrahevip img{
+	border: 10px solid #AFAFAF;
+	width: 450px;
+	height: 320px;
+}
+div.vtrahevip li{
+	margin-top:10px;
+	margin-left: 90px;
+}
+@media screen and (max-device-width: 1080px){
+	div.vtrahevip img{
+		margin-left: -60px;
+		width: 380px;
+		height: 260px;
+	}
+}
+
+/* ВИДЕО pornhub --------------------------------------*/
+div.pornhub img{
+	border: 10px solid orange;
+	width: 450px;
+	height: 270px;
+	margin-left: 10px;
+}
+div.pornhub li{
+	margin-top: 40px;
+	margin-left: 90px;
+}
+@media screen and (max-device-width: 1080px){
+	div.pornhub img{
+		margin-left: -40px;
+		width: 370px;
+		height: 230px;
 	}
 }
