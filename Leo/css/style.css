@@ -56,11 +56,15 @@ header{
 	text-decoration: none;
 	position: absolute;
 }
+.img_first{
+	margin-left: 27%;
+}
 .img-menu{
 	display: inline-block;
 	margin-top: 150px;
 	margin-left: 100px;
 }
+
 .alt{
 	display: inline-block;
 	margin-top: 20px;
@@ -194,7 +198,6 @@ footer{
 }
 .About_ul{
 	padding: 0;
-
 	margin-left: 500px;
 	color: #717271;
 }
@@ -233,4 +236,100 @@ footer{
 	display: inline-block;
 	margin-left: 7%;
 	color: white;
+}
+
+@media screen and (max-device-width: 361px){
+
+	header{
+	width: 118%;
+	}
+	.logo{
+		margin-left: 10%;
+		width: 20%;
+	}
+	.cof{
+		margin-left: 20%;
+		margin-top: 17%;
+		width: 20%;
+	}
+	.MainTitle{
+		margin-top: -27%;
+		margin-left: 55%;
+	}
+	.title{
+		margin-top: -20%;
+		margin-left: 55%;
+	}
+	.try{
+		opacity: 1;
+		margin-top: -13%;
+		margin-left: 55%;
+	}
+	.img_first{
+		margin-left: 27%;
+	}
+	.img-menu{
+		margin-top: 150px;
+		margin-left: 4%;
+	}
+
+	.alt{
+		margin-left: 30px;
+	}
+	.ipad{
+		width: 70%;
+	}
+	.container{
+		margin-top: 40px;
+		width: 70%;
+	}
+	.stat{
+		margin-left: 15%;
+	}
+	.choose_ul{
+		width: 35%;
+		margin-top: 7%;
+		margin-left: 3%;
+		position: absolute;
+		display: inline-block;
+	}
+	.choose{
+		color: #8a8888;
+		margin-bottom: 15px;
+		list-style-image: url("Shape 15 copy 2.png");
+	}
+	.form_log{
+		margin-left: 15%;
+		width: 40%;
+	}
+	.form_email{
+		margin-left: 5%;
+		width: 50%;
+	}
+	footer{
+		width: 118%;
+	}
+	.about_p{
+	margin-left: 200px;
+	}
+	.About_ul{
+		width: 120px;
+		margin-left: 70%;
+	}
+	.about_li{
+		margin-bottom: 5px;
+		list-style-type: none;
+	}
+	.test_h2{
+		margin-left: 45%;
+	}
+	.test_p{
+		margin-left: 45%;
+	}
+	.test_p2{
+		margin-left: 45%;
+	}
+	.logo_fot{
+		margin-left: 5%;
+	}
 }
