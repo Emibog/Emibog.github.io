@@ -302,6 +302,9 @@ footer{
 		margin-left: 15%;
 		width: 40%;
 	}
+	.email_main{
+		font-size: 25px;
+	}
 	.form_email{
 		margin-left: 5%;
 		width: 50%;
