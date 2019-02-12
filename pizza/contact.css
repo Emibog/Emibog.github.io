@@ -83,7 +83,7 @@ footer a{
 .contact_text{
 	color: white;
 	letter-spacing: 0px;
-	width: 300px;
+	width: 250px;
 	text-align: center;
 	font-size: 40px;
 	margin-left: 50px;
@@ -110,11 +110,11 @@ footer a{
 }
 .subm{
 	margin-top: 30px;
-	margin-left: 60px;
+	margin-left: 80px;
 	background-color: #F0BC45FF;
 	font-size: 15px;
 	font-weight: bold;
-	width: 250px;
+	width: 200px;
 	height: 50px;
 	border: 0;
 }
@@ -124,22 +124,18 @@ footer a{
 }
 @media screen and (max-device-width: 375px) {
 	footer{
-		margin-top: 350%;
+		margin-top: 430%;
 	}
 	ul{
 		font-size: 30px;
 	}
 }
-@media screen and (min-device-width: 640px) and (max-device-width: 641px) {
-	#logo{
-		margin: 30px 0 0 30px;
-		transform: scale(0.7);
-	}
-footer{
-		margin-top: 10%;
+@media screen and (min-device-width: 660px) and (max-device-width: 661px) {
+	footer{
+		margin-top: 20%;
 	}
 	ul{
-		margin-top: 20px;
-		font-size: 15px;
+		margin-top: 30px;
+		font-size: 20px;
 	}
 }

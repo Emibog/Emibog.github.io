@@ -85,7 +85,7 @@ footer a{
 	width: 200px;
 	text-align: center;
 	font-size: 40px;
-	margin-left: 50px;
+	margin-left: 100px;
 	background-color: black;
 	border-left: 5px solid #F0BC45;
 }
@@ -99,7 +99,7 @@ footer a{
 }
 @media screen and (max-device-width: 375px) {
 	footer{
-	margin-top: 600%;
+	margin-top: 700%;
 }
 	ul{
 	font-size: 40px;
@@ -111,14 +111,5 @@ footer a{
 	}
 	.image{
 		padding: 10px;
-	}
-}
-@media screen and (min-device-width: 640px) and (max-device-width: 641px) {
-footer{
-		margin-top: 130%;
-	}
-	ul{
-		margin-top: 50px;
-		font-size: 20px;
 	}
 }

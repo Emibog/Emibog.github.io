@@ -9,7 +9,7 @@ html, body{
 }
 nav{
 	display: inline-block;
-	margin: 0;
+	margin: 0; 
 	width: 250px;
 	height: 100%;
 	background-image: url(bg-menu.jpg);
@@ -86,7 +86,7 @@ footer a{
 	width: 200px;
 	text-align: center;
 	font-size: 40px;
-	margin-left: 50px;
+	margin-left: 100px;
 	background-color: black;
 	border-left: 5px solid #F0BC45;
 }
@@ -125,29 +125,20 @@ footer a{
 	display: inline-block; 
 	position: absolute;
 }
-.description{
-	 font-size: 15px; 
-	 color: #585755FF; 
-	 padding-right: 100px;
-}
 @media screen and (max-device-width: 375px) {
 	ul{
 		font-size: 30px;
 	}
 	footer{
-	margin-top: 350%;
+	margin-top: 430%;
 	}
 }
-@media screen and (min-device-width: 640px) and (max-device-width: 641px) {
-	#logo{
-		margin: 30px 0 0 30px;
-		transform: scale(0.7);
-	}
-footer{
-		margin-top: 10%;
+@media screen and (min-device-width: 660px) and (max-device-width: 661px) {
+	footer{
+		margin-top: 20%;
 	}
 	ul{
-		margin-top: 20px;
-		font-size: 15px;
+		margin-top: 30px;
+		font-size: 20px;
 	}
 }
