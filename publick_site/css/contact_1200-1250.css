@@ -18,6 +18,36 @@
 		margin-top: 100px;
 		margin-bottom: 0;
 	}
+
+  .content {
+    margin-left: 25%;
+    padding-left: 5%;
+    width: 140%;
+    margin-top: 10%;
+    margin-bottom: 22%;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  input.email {
+    width: 40%;
+    height: 40px;
+  }
+  ::placeholder{
+  	font-size: 20px;
+  }
+  input.msg {
+    width: 45%;
+    height: 150px;
+  }
+
+  input.send {
+    width: 10%;
+    height: 30px;
+  }
+
 	footer{
 		width: 190%;
 		height: 160px;

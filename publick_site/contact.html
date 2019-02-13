@@ -2,8 +2,8 @@
 <html lang="ru">
 
 <head>
+  <title>Создание сайтов Рязань - Контакты - Ginvaellaest</title>
   <meta charset="UTF-8">
-  <title>Создание сайтов Рязань - Мои работы - Ginvaellaest</title>
   <meta name="keywords" content="ginvaellaest.ru, ginvaellaest, разработка сайтов Рязань, разработка сайтов, сверстать сайт Рязань, сверстать сайт, купить сайт Рязань, купить сайт">
   <meta name="description" content="Купить сайт в рязань">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,11 +11,11 @@
   <link rel="shortcut icon" href="img/icon.ico">
   <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Ubuntu+Condensed" rel="stylesheet">
-  <link rel="stylesheet" href="css/my_works.css">
-  <link rel="stylesheet" type="text/css" media="(min-device-width : 320px) and (max-device-width : 360px)" href="css/my_works_320-360.css" />
-  <link rel="stylesheet" type="text/css" media="(min-device-width : 360px) and (max-device-width : 600px)" href="css/my_works_360-600.css" />
-  <link rel="stylesheet" type="text/css" media="(min-device-width : 600px) and (max-device-width : 1200px)" href="css/my_works_600-1200.css" />
-  <link rel="stylesheet" type="text/css" media="(min-device-width : 1200px) and (max-device-width : 1250px)" href="css/my_works_1200-1250.css" />
+  <link rel="stylesheet" href="css/contact.css">
+  <link rel="stylesheet" type="text/css" media="(min-device-width : 320px) and (max-device-width : 360px)" href="css/contact_320-360.css" />
+  <link rel="stylesheet" type="text/css" media="(min-device-width : 360px) and (max-device-width : 600px)" href="css/contact_360-600.css" />
+  <link rel="stylesheet" type="text/css" media="(min-device-width : 600px) and (max-device-width : 1200px)" href="css/contact_600-1200.css" />
+  <link rel="stylesheet" type="text/css" media="(min-device-width : 1200px) and (max-device-width : 1250px)" href="css/contact_1200-1250.css" />
 </head>
 
 <body>
@@ -26,13 +26,16 @@
       <li class="contact_li"><a href="contact.html" class="contact">Контакты</a></li>
     </ul>
   </nav>
-  <section>
-    <h1 class="my_works_h1">Мои работы</h1>
-    <div>
-      <div class="one_item"><img src="img/monitor_tel_pizza.png" alt=""><a href="https://emibog.github.io/" target="blank">Перейти на этот сайт</a></div>
-      <div class="one_item"><img src="img/monitor_tel_leo.png" alt=""><a href="https://emibog.github.io/Leo" target="blank">Перейти на этот сайт</a></div>
-    </div>
-  </section>
+  <div class="content">
+    <a href="https://vk.com/bogdan_eminov" target="_blank"><h1 style="font-size: 30px; margin-top: 7%;">Вконтакте</h1></a>
+    <h1>Email: <em>eminov.bogdan@mail.ru</em></h1>
+    <h1 style="margin-top: 15%;">Отправить email.</h1>
+    <form class="" action="contact.html" method="post">
+      <input type="email" name="email" value="" placeholder="Введите ваш email" class="email">
+      <input type="text" name="text" value="" placeholder="Введите текст сообщения" class="msg">
+      <input type="submit" value="Отправить" class="send">
+    </form>
+  </div>
   <footer>
     <div class="connection">
       <p>Средства связи:</p>
