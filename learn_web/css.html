@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Css</title>
+	<link rel="stylesheet" href="css\css.css">
+	<link rel="short icon" href="img\iconCSS.ico">
+</head>
+<body>
+	<a href="#header"><img  id="up" src="img\up.png"></a>
+	<header id="header">
+		<h1>CSS</h1>
+		<p class="text"><a href="index.html">На главную</a></p>
+		<ol>
+			<li><a href="#цвет">Цвета</a></li>
+			<li><a href="#фон">Фон</a></li>
+			<li><a href="#отступ">Отступ</a></li>
+			<li><a href="#оформление_текста">Оформление текста</a></li>
+			<li><a href="#оформление_ссылок">Оформление ссылок</a></li>
+			<li><a href="#рамки">Рамки</a></li>
+			<li><a href="#закругленные_углы">Закругленные углы</a></li>
+			<li><a href="#списки">Списки</a></li>
+			<li><a href="#тени">Тени</a></li>
+			<li><a href="#плавный_переход">Плавный переход</a></li>
+			<li><a href="#градиент">Градиент</a></li>
+			<li><a href="#позиционирование">Позиционирование</a></li>
+			<li><a href="#трансформации">Трансформации</a></li>
+			<li><a href="#псевдо-элементы">Псевдо-элементы</a></li>
+			<li><a href="#трехмерный_куб">Трехмерный куб</a></li>
+			<li><a href="#анимация">Анимация</a></li>
+		</ol>
+	</header>
+	<article>
+		<dir id="цвет">
+			<p>1. Для изменение цвета используется функция "color: ( цвет );". <a id="ссылка" href="https://html-color-codes.info/Cvetovye-kody-HTML/" target="blank">Сайт с цветами для html.</a></p>
+			<p>Далее функия для создания фона в блоке body - "background-color: rgba(0 - 255, 0 - 255, 0 - 255, 0 - 1)". Эта функция создает цвета и прозрачность цвета. Но так же можно изпользовать просто "background: (цвет)". Стоит заметить, что функция "color" в body меняет НЕ ФОН, а цвет текста в это блоке. На этом с цветами всеwef.</p>
+		</dir>
+		<dir id="ifr">
+			<iframe src="https://html-color-codes.info/Cvetovye-kody-HTML/" style="width: 1000px; height: 500px; overflow: scroll; margin-left: -13px; margin-top: 20px; border: 5px groove"></iframe>
+		</dir>
+		<br><br><br><br>
+		<dir id="фон">
+			<p>2. Для изменения фона (картинки), используется функция "background-image: url (ссылка на картинку ), url( можно несколько картинок );". Если картинка меньше чем нужно и повторяется, то используется функция "background-repeat: ( repeat, no-repeat, repeat-x, repeat-y );".</p> 
+			<p>Функция "background-position: ( bottom, top, right, left ) или ( значение в px );" может принимать 2 значения, по вертикали и горизонтали. Если фонов несколько, то значения для них указываются через запятую и в порядке их добавления.</p>
+			<p>Функция "background-attachment: fixed;" зафиксирует положение фона внезависимости от изменения рамера и положения страницы. Если фонов несколько, то значения для них указываются через запятую и в порядке их добавления.</p>
+			<p>Чтобы задать рамер фона, используется функция "background-size: ( значение в px или % ) или ( contain - растянется во весь контейнер, cover - заполнит весь контейнер );". Если фонов несколько, то значения для них указываются через запятую и в порядке их добавления.</p>
+			<p>Для изменения цвета фона функция "background-color: (цвет);".</p>
+			<p>Можно указать все эти свойства разом, в определенном порядке, в функции "background: attachment color url position repeat, url( если нужно второе, то убираем цвет и ставим перед url запятую );" БЕЗ ЗАПЯТЫХ.</p>
+		</dir>
+		<br><br><br><br>
+		<dir id="отступ">
+			<p>3. Для изменения отступа используется функция "margin: ( отступ в px );", "margin-( left, right, top, bottom );", для отступа с отпределенных сторон. Так же есть функция для изменения типа блока "display: ( inline, block, inline-block );". Функция "padding" для внутреннего отступа. Так же, <a href="https://www.youtube.com/	watch?v=eZingxnTQ90&index=4&list=PL026CCEB5125879C2" target="blank">вот ссылка на полезный видос</a>, там про позиционирование и скроллинг ограниченного dir.</p>
+		</dir>
+		<br><br><br><br>
+		<dir id="оформление_текста">
+			<p>4. Для изменения цвета текста используется функция "color: ( цвет );".</p>
+			<p>Для изменения шрифта текста, используется функция "font-family: ( название шрифта );".</p>
+			<p>Чтобы измененить расстояние между буквами, используется функция "letter-spacing: ( размер в px );".</p>
+			<p>Для изменения размера текста, используется функция "font-size: ( размер в px );".</p>
+			<p>Чтобы подчеркнуть текст, используется функция "text-decoration: ( underline, overline, none );".</p>
+			<p>Для создаения тени у текста, используется функция "text-shadow:  ( смещение по горизонтали ) px ( смещение по вертикали ) px  ( размытие ) px ( цвет )", все значения указываются без запятых. </p>
+		</dir>
+		<br><br><br><br>
+		<dir id="оформление_ссылок" >
+			<p>5. Не посещенная — a:link{}.</p>
+			<p>Посещенная — по которой уже выполнялся переход — a:visited{}.</p>
+			<p>Не нажатая — над которой находится указатель мыши — a:hover{}.</p>
+			<p>Нажатая — которая удерживается мышью — a:active{}.</p>
+			<p>Для оформления курсора при наведении его на ссылку -</p>
+			<iframe src="https://codepen.io/html5book/embed/RGWgBQ?height=550&theme-id=0&slug-hash=RGWgBQ&default-tab=result&user=html5book"  width="1000px;" height="550px" scrolling="no"></iframe><dir id="фон" style="background: #AEACAC; width: 985px; height: 578px; margin-left: 130px; margin-top: -577px; border: 10px ridge #CECACA; border-radius: 30px 10px;"> </dir>
+			<br>
+			<p>Так же для ссылок можно использовать ФОНОВОЕ изображение, это функция "background-image: url( )". Либо просто цвет "background: ( цвет )".</p>
+		</dir>
+		<br><br><br><br>
+		<dir id="рамки">
+			<p>6. Для создания рамки используется функция "border ( ширина ) px ( тип ) ( цвет )</p>
+			<p style="display: inline;">Вот типы рамок - </p>
+			<img src="img\border.png" style=" margin-left: 450px; margin-left: 5px;">
+			<p>Вообще, "border" это сокращение множества свойств, таких как "border-width-top, border-style-bottom, border-color-left". Можно указывать определенные свойства для определенной стороны.</p>
+		</dir>
+		<br><br><br><br>
+		<dir id="закругленные_углы">
+			<p>7. Для создания закругленного угла ( ов ), используется функция "-moz-border-radius ( значение в px или % );". Значение может указываться как одно, так и два, три, четыре.</p>
+			<p style="display: inline;">Вот пример - </p>
+			</dir>
+				<img class="imgradius" src="img\border-radius.png">
+			<dir> 
+			<p>Есть более точные функции "border-bottom-right-radius". В них может задаваться 1 - 2 значения ( в px или % )</p>
+		</dir>
+		<br><br><br><br>
+		<dir id="списки">
+			<p>8. Чтобы задать знак, который будет отображать справа от списка, используется функция </p><p>"list-style-type: <img src="img\spisok.jpg">;"</p>
+			<p>Для того чтобы определить будет ли знак частью блока или он будет внутр. отступом, нужно задать функцию "list-style-position: ( inside - часть блока, outside - отступ );".</p>
+			<p>Чтобы вместо значка задать картинку, используется функция "list-style-image: url( ссылка на картинку );".</p>
+		</dir>
+		<br><br><br><br>
+		<dir id="тени">
+			<p>9. Для того чтобы создать тени,  используется функция "box-shadow: ( inset - для внутр. тени если нужно, смещение по горизонтали, смещение по вертикали, размытие, цвет.);" БЕЗ ЗАПЯТЫХ, ( "text-shadow: ;" для текста). Также можно создавать несколько теней в одной функции, для этого после первой тени ставится запятая и пишется другая.<span id="decor">Так же, чтобы все браузеры использовали тень, нужно дописать функции "-moz-box-shadow:" и "-webkit-box-shadow:" и "-o-box-shadow:" с такими же значениями.</span></p>
+		</dir>
+		<br><br><br><br>
+		<dir id="плавный_переход">
+			<p>10. Для создания плавной анимации, используется функция "transition: ;", но это краткая запись функций "transition-property:; ( для каких свойств будет использоваться плавность, all - для всех )", "transition-duration: ; ( продолжительность перехода )", "transition-timing-function: ; ( функция перехода )", "transition-delay: ; ( задержка перехода )". Подробнее о фвех фунция <a href="https://html5book.ru/css3-transition/" target="blank">на этом сайте</a>.</p>
+		</dir>
+		<br><br><br><br>
+		<dir id="градиент">
+			<p>11. Для создания градиента, используется функция "background: -moz-linear-gradient(угол / сторона или угол наклона с помощью ключевого слова ( пары ключевых слов ), первый цвет, второй цвет и т.д.);", это был линенйный градиент. Есть еще радиальный градиент "background: -moz-radial-gradient( форма градиента / размер / позиция центра, первый цвет, второй цвет и т.д. );". Чтобы градиент повторялся "background: -moz-repeating-radial-gradient; или background: -moz-linear-radial-gradient;".</p>
+		</dir>
+		<br><br><br><br>
+		<dir id="позиционирование">
+			<p>12. Для определения позиционирования, используется функция "position: ;" со следующими значениями "relative, absolute, fixed".
+			<p>Absolute - абсолютное позиционирование относительно body.</p>
+			<p>Relative - позиционирование относительно родительского элемента.</p>
+			<p>Fixed - зафиксированное позиционирование.</p>
+			<p style="float: left;">Вот полезный видос - </p>
+			<iframe  width="560" height="315" src="https://www.youtube.com/embed/MsJm9smHmjc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style="margin-left: 500px; margin-top: -80px;"></iframe>
+		</dir>
+		<br><br><br><br>
+		<dir id="трансформации">
+			<p>13. Для создания трансформации ( можно сказать, той же анимации ), используется функция "transform: ;", которая принимает следующие значения "scale( x,y ) - масштаб ( scaleX( n ), scaleY( n ) ), rotate( угол deg ), skew(x-угол,y-угол) - скос ( skewX(угол), skewY(угол) ), translate(x,y) - сдвиг ( translateX(n), translateY(n) )", rotate3d( -1 - 1, -1 - 1, -1 - 1, угол ), о последнем подробнее <a href="https://www.youtube.com/watch?v=OmlHKURlvhg&list=PL026CCEB5125879C2&index=17" target="blank">смотри в видосе</a>".</p>
+			<p>Далее идет функция для смены точки трансформации "transform-origin: ( ось Х( top left, bottom right, top, center, bottom, left, rigt, px, % )
+			   ось Y( top left, bottom right, top, center, bottom, left, rigt, px, % ) ) "
+			</p>
+		</dir>
+		<br><br><br><br>
+		<dir id="псевдо-элементы">
+			<p>14. Здесь будут описаны основные псевдо-элементы. Более подробно о них сморти на <a href="http://htmlbook.ru/css/cat/pseudoelement" target="blank">этом сайте</a>. А <a href="http://htmlbook.ru/css/cat/pseudoclass" target="blank">здесь</a> псевдоклассы</p>
+			<p>::befor - вствака контента перед элементом.</p>
+			<p>::after - вствака контента после элемента.</p>
+			<p>::first-letter - изменение первой буквы в элементе.</p>
+			<p>::first-line - изменение первой строки в элементе.</p>
+			<p style="float: left;">Вот полезный видос - </p>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/hLQTIiC-0Jk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style="margin-left: 500px; margin-top: -80px;"></iframe>
+		</dir>
+		<br><br><br><br>
+		<dir id="трехмерный_куб">
+			<p>15. <a href="https://www.youtube.com/watch?v=fzubePyhPok" target="blank">Смотри видео.</a></p>
+		</dir>
+		<br><br><br><br>
+		<dir id="анимация">
+			<p>16. Создание анимации начинается с установки ключевых кадров правила "@keyframes". Правило @keyframes содержит имя анимации элемента, которое связывает правило и блок объявления элемента. Ключевые кадры создаются с помощью ключевых слов from и to ( эквивалентны значениям 0% и 100% ) или с помощью процентных пунктов, которых можно задавать сколько угодно.</p>
+			<p>Для обращения к анимации нужно указать ее имя в параметре "animation-name: ( имя );", который указан в том элементе в CSS, который будет анимироваться.</p>
+			<p>Продолжительность анимации - "animation-duration: ;"..</p>
+			<p>Временная функция "animation-timing-function: ( ease, linear, ease-in, ease-out, ease-in-out );".</p>
+			<p>Повтор анимации "animation-iteration-count: ;". Для бесконечной анимации значение "infinite".</p>
+			<p>Направление анимации "animation-direction: ;". alternate - Анимация проигрывается с начала до конца, затем в обратном направлении. alternate-reverse - Анимация проигрывается с конца до начала, затем в обратном направлении. normal - Значение по умолчанию, анимация проигрывается в обычном направлении, с начала и до конца. reverse - Анимация проигрывается с конца.</p>
+			<p>Кратка запись "animation: animation-name animation-duration animation-timing-function animation-delay animation-iteration-count animation-direction;"</p>
+			<p>Множественные анимации "div { animation: shadow 1s ease-in-out 0.5s alternate, move 5s linear 2s; }".</p>
+		</dir>
+	</article>
+	<footer>
+		<div class="button">
+			<a class="abutton" target="blank" href="https://vk.com/bogdan_eminov"></a>
+		</div>
+	</footer>
+</body>
+</html>

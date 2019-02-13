@@ -1,0 +1,200 @@
+body{
+	background: #181907;
+	color: #ccc;
+	font-family: Impact;
+	margin-right: 20px;
+	margin: 0px;
+	max-width: 1080px;
+}
+ol{
+	list-style-position: inside;
+	background-color: #644A28;
+	padding-left: 20px;
+	width: 550px;
+	border-radius: 30px;
+	transition: all .9s;
+	-o-box-shadow: 5px 5px 20px #191007;
+	box-shadow: 5px 5px 20px #191007;
+	text-shadow: 3px 3px 10px #B18904;
+}
+ol:hover{
+	background-color: #191007;
+	-moz-background-color: #191007;
+	-webkit-background-color: #191007;
+	-o-background-color: #191007;
+	-o-box-shadow: 5px 5px 20px #000;
+	box-shadow: 5px 5px 20px #000;
+}
+img{
+	transition: all .5s;
+	-webkit-transition: all .5s;
+	-o-transition: all .5s;
+}
+img:hover{
+	transform: scale(2);
+	-webkit-transform: scale(2);
+	-o-transform: scale(2);
+}
+h1{
+	display: inline-block;
+	font-family: Arial;
+	font-size: 100px;
+	letter-spacing: 2px;
+	margin-left: 30px;
+	margin-top: 10px;
+	margin: 0px;
+	text-decoration: underline;
+}
+
+p.text{
+	display: inline;
+	font-size: 40px;
+	margin-left: 650px;
+	margin-top: 0px;
+}
+p.text a{
+	color: 	#ccc;
+	text-decoration: none;
+}
+p.text a:hover{
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+ol{
+	font-size: 50px;
+	margin-bottom: 200px;
+	margin-left: 100px;
+}
+
+li{
+	margin-bottom: 10px;
+}
+ol a{
+	color: 	#ccc;
+	text-decoration: none;
+	transition: all .9s;
+	-webkit-transition: all .9s;
+	-o-transition: all .9s;
+}
+ol a:hover{
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+p{
+	font-size: 35px;
+	margin-left: 150px;
+}
+#ссылка{
+	border: 5px inset #F5A9BC;
+}
+iframe{
+	margin-left: 150px;
+	
+}
+#up{
+	margin-left: 1840px;
+	margin-top: 890px;
+	position: fixed;
+	width: 3%;
+	transition: all .2s;
+}
+#up:hover{
+	-webkit-transform: translateY(-10px) scale(1.1);
+	transform: translateY(-10px) scale(1.1);
+}
+.imgradius{
+	margin-left: 400px;
+	margin-top: -50px;
+}
+.button{
+	display: inline-block;
+	margin: 20px;
+	margin-left: 200px;
+	width: 100px;
+	height: 100px;
+	background: url(https://www.youtube.com/redirect?redir_token=Jo1Dsxpru93k9sD9BouYoZUiSh58MTUyMjA3OTA4NUAxNTIxOTkyNjg1&q=http%3A%2F%2Fsubtlepatterns.com%2Fpatterns%2Fextra_clean_paper.png&v=iEW3IVqpJm0&event=video_description);
+	cursor: pointer;
+	border-radius: 50%;
+	box-shadow: 0 3px 20px #aaa, inset 0 3px 0 #fff, 0 3px 0 #000, inset 0 0 20px rgba(0, 0, 0, .1);
+	-moz-box-shadow: 0 3px 20px #aaa, inset 0 3px 0 #fff, 0 3px 0 #000, inset 0 0 20px rgba(0, 0, 0, .1);
+	-webkit-box-shadow: 0 3px 20px #aaa, inset 0 3px 0 #fff, 0 3px 0 #000, inset 0 0 20px rgba(0, 0, 0, .1);
+	-o-box-shadow: 0 3px 20px #aaa, inset 0 3px 0 #fff, 0 3px 0 #000, inset 0 0 20px rgba(0, 0, 0, .1);
+}
+.button:hover{
+	box-shadow: inset 0 0 20px #aaa, 0 3px 0 #fff, inset 0 3px 0 #000;
+	-moz-box-shadow: inset 0 0 20px #aaa, 0 3px 0 #fff, inset 0 3px 0 #000;
+	-webkit-box-shadow: inset 0 0 20px #aaa, 0 3px 0 #fff, inset 0 3px 0 #000;
+	-o-box-shadow: inset 0 0 20px #aaa, 0 3px 0 #fff, inset 0 3px 0 #000;
+}
+.button{
+	background: url(https://cdn.iconscout.com/public/images/icon/free/png-192/vk-social-media-30e7c557bc2ab7f2-192x192.png) center no-repeat;
+	background-size: 100px 100px;
+}
+.button:hover{
+	background-position: 0 2px;
+}
+a.abutton{
+	display: block;
+	margin-top: 4px;
+	width: 100px;
+	height: 100px;
+	cursor: pointer;	
+}
+#decor{
+	text-decoration: underline;
+}
+footer{
+	background: linear-gradient(to bottom, #181907 1%, #644A28 20%, #493213 90%);
+	border-top-right-radius: 20px;
+	border-top-left-radius: 20px;
+	-moz-border-top-right-radius: 20px;
+	-moz-border-top-left-radius: 20px;
+	-webkit-border-top-right-radius: 20px;
+	-webkit-border-top-left-radius: 20px;
+	-o-border-top-right-radius: 20px;
+	-o-border-top-left-radius: 20px;
+	width: 1883px;
+}
+#ifr{
+	margin-left: 190px;
+	width: 1020px;
+	height: 550px;
+	background: #AEACAC;
+	border: 10px ridge #CECACA; 
+	border-radius: 30px 10px;
+}
+a{
+	color: 	#F5A9BC;
+	text-decoration: none;
+}
+a:hover{
+	color: #F5A9BC;
+	text-decoration: underline;
+}
+@media only screen and (max-width: 1080px){
+	.imgradius{
+		margin-left: 330px;
+	}
+	#up{
+		margin-left: 1190px;
+		margin-top: 2120px;
+		width: 5%;
+	}
+	body{
+		width: 1000px;
+	}
+	dir{
+		width: 1210px;
+		margin-left: -70px;
+	}
+	#ifr{
+    	margin-left: 120px;
+	}
+	p.text{
+		margin-left: 400px;
+	}
+	footer{
+		width: 1270px;
+	}
+}
+
