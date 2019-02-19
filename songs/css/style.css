@@ -1,40 +1,41 @@
-body{
-	font-family: Franklin Gothic Medium; 
-	font-weight: bold;
-	background-attachment: fixed; 
-	background-image: url(F:/SiteSong/img/maxresdefault.jpg);
+html, body{
+	width: 100%;
+	ffont-family: 'Poppins', sans-serif;
+	background-attachment: fixed;
+	background-image: url();
 	background-size: cover;
 	padding: 0px;
 	margin: 0px;
 }
 #content{
-	min-height: 700px;
-	min-width: 1500px;
-	max-width: 1500px;
-	background: #680246FF;
+	width: 75%;
+	background-color: #c8cc98;
 	margin: 5px auto;
 	border-radius: 4px 4px 4px 4px;
-	border: inset 5px #900261FF;
+	border: inset 5px #b8bd83;
 }
-#video{
+.one_item{
+	width: 560px;
+	margin-top: 5%;
+	margin-left: 30%;
+	margin-bottom: 3%;
+	display: inline-block;
+}
+.one_item > iframe{
 	display: block;
-	margin: 10px auto;
 }
-#text{
-	border: solid 3px #494949;
-	margin-left: 465px;
-	max-width: 550px;
-	min-height: 50px;
-	max-height: 50px;
-	overflow: hidden;
+.one_item > button{
+	border-radius: 2px;
+	cursor: pointer;
+	background-color: #7aa360;
+	font-family: 'Poppins', sans-serif;
+	border: 0;
+	color: white;
+	margin-top: 3%;
 	display: block;
-	border-radius: 7px 7px 7px 7px;
-	background-color: #BEBAD3FF;
-	transition: max-height 0.5s;
-	white-space: pre-line;
-	padding: 5px;
 }
-#text:hover{
-	transition: max-height 0.5s;
-	max-height: 1000px;
+.one_item > p{
+	border-radius: 2px;
+	padding: 10px;
+	background-color: #7aa360;
 }
