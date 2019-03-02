@@ -1,7 +1,7 @@
 body{
 	font-family: Impact;
 	margin: 0px;
-	background-image: url(darkness.png);
+	background-image: url("darkness.png");
 }
 ul{
 	border: 0;
@@ -10,39 +10,36 @@ ul{
 	padding: 0;
 }
 .all li{
-	background-image: url(navig.jpg);
-	border: 0;
+	background-color: black;
 	display: inline-block;
 	height: 71px;
 	margin: -1.2px;
-	width: 640px;
+	width: 384px;
+	text-align: center;
 }
-
-li.css{
-	background-position: -641px 0;
+li:hover{
+	background-color: white;
 }
-li.site{
-	background-position: -1282px 0;
+a:hover{
+	color: #69AD03;
 }
-li.html:hover{
-	background-position: 0 -73px;
-}
-li.css:hover{
-	background-position: -640px -73px;
-}
-li.site:hover{
-	background-position: -1283px -73px;
+.site > a{
+	padding: 1.3% 0 0 0;
+	width: 100%;
 }
 a{
+	padding: 1.3% 0 0 0;
+	font-size: 50px;
+	text-decoration: none;
+	color: #A800C6;
 	display: inline-block;
-	height: 73px;
-	width: 640px;
+	width: 100%;
 }
 @media only screen and (max-width: 1080px){
 	body{
 		-webkit-background-size: 3000px 3000px;
-		     -o-background-size: 3000px;
-		        background-size: 3000px;
+		-o-background-size: 3000px;
+		background-size: 3000px;
 	}
 	li.html{
 		margin-left: 150px;
