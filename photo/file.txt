@@ -1,0 +1,1 @@
+<?php mysqli_query($connect, UPDATE `users` SET `active`='1' WHERE `login` = '');?>
