@@ -5,6 +5,8 @@
 		<link rel="stylesheet" href="css/top.css">
 		<link href="https://fonts.googleapis.com/css?family=Amatic+SC:700&display=swap" rel="stylesheet">
 		<link rel="shortcut icon" href="sistem_img/logo.ico" type="image/x-icon">
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<script src="js/findcategoriesnav.js"></script>
 		<meta charset="UTF-8">
 		<title>Ginvaellaest - пространство для твоих фото!</title>
 	</head>
@@ -12,6 +14,18 @@
 
 		<nav>
 			<a href="index.php" class="logo"><img src="sistem_img/logo.png" alt="" class="logo"></a>
+			<div class="categories_select">
+				<h1 class="h1_cat">Категории</h1>
+				<form action="categories.php" method="POST">
+				<?php
+					$catres = mysqli_query($connect, "SELECT * FROM `categories`");
+					while($cat = mysqli_fetch_assoc($catres)){
+						echo "<input type='submit' class='".$cat['id']."' name='".$cat['id']."' value='".$cat['title']."'>";
+					}
+				?>
+				<input type="hidden" class="id" name="id">
+				</form>
+			</div>
 			<div class="profile">
 				<?php
 				$cov = '"';
@@ -37,7 +51,7 @@
 			<div class="content">
 				<?php
 				
-				$idres = mysqli_query($connect, "SELECT * FROM `photo` ORDER BY `id` DESC");
+				$idres = mysqli_query($connect, "SELECT * FROM `photo` WHERE `hidden` IS NULL ORDER BY `id` DESC ");
 				while($id = mysqli_fetch_assoc($idres)){
 				$cat = $id['categories'];
 				$categoriesres = mysqli_query($connect, "SELECT `title` FROM `categories` WHERE `id` = '$cat'");
@@ -67,7 +81,7 @@
 							<br>
 							<span class='date'>Дата публикации: ".$date."-".$month."-".$year."</span>
 							<br>
-							<span class='categories'>Категория:".$categories."</span>
+							<span class='categories'>Категория: ".$categories."</span>
 							<form action='' method='POST'>
 								<input type='hidden' value='' class='for_id' name='forid'>
 							</form>

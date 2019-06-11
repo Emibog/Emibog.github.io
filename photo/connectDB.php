@@ -3,7 +3,7 @@
 	if (($connect = mysqli_connect('localhost', 'root', '', 'photo'))) {
 		
 	}else{
-		echo "Не удалось подключиться к базе данных!";
+		echo "<p class='php_text' style='margin-left: 43%;'>Не удалось подключиться к базе данных!</p>";
 		exit();
 	}
 

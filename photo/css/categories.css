@@ -1,0 +1,249 @@
+html, body{
+	padding: 0;
+	margin: 0;
+	min-width: 100%;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	background-color: #fafafa;
+}
+/* МЕНЮ -------------------------------------------------------*/
+.logo{
+	float: left;
+	margin: 0;
+	margin-top: -1%;
+	margin-left: 5.5%;
+	width: 25%;
+}
+nav{
+	width: 100%;
+	height: 50px;
+	background-color: #D4D4D4;
+	opacity: 0.85;
+	padding-top: 25px;
+	position: fixed;
+	
+}
+.profile{
+	width: 22%;
+	margin-top: -0.5%;
+	margin-right: 7%;
+	float: right;
+}
+.loginorreg{
+	width: 35%;
+	margin-top: -0.5%;
+	margin-right: 71%;
+	float: right;
+}
+.to_top{
+	font-size: 155%;
+}
+.to_profile{
+	font-size: 155%;
+}
+nav>div>a{
+	text-decoration: none;
+	color: #070707;
+	font-size: 190%;
+}
+nav>div>div>a{
+	text-decoration: none;
+	color: #070707;
+	font-size: 190%;
+}
+.h1_cat{
+	margin-left: 20%;
+	display: inline-block;
+}
+.categories_select{
+	margin-top: -20px;
+	height: 55px;
+	overflow: hidden;
+	display: inline-block;
+	width: 10%;
+	transition: 0.2s;
+}
+.categories_select::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 100px;
+	background-color: #F5F5F5;
+}
+
+.categories_select::-webkit-scrollbar
+{
+	width: 7px;
+	background-color: #F5F5F5;
+}
+
+.categories_select::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #555;
+}
+.categories_select>form{
+	padding-left: 15%;
+}
+.categories_select>input{
+	cursor: pointer;
+	font-size: 100%;
+}
+
+input[type="submit"]{
+	margin-top: 5%;
+	display: inline-block;
+	cursor: pointer;
+  color: gray;
+  width: 85%;
+  padding: .5em 2em;
+  outline: none;
+  border: 2px solid;
+  border-radius: 1px;
+  transition: 0.2s;
+  position: relative;
+}
+.categories_select:hover{
+	opacity: 1;
+	background-color: #D4D4D4;
+	margin-top: -20px;
+	border-radius: 5px;
+	height: 200px;
+	overflow-y: scroll;
+	display: inline-block;
+	width: 10%;
+	transition: 0.2s;
+}
+.avatar{
+	display: inline-block;
+	width: 45px;
+	height: 45px;
+	margin-bottom: -10px;
+	margin-right: 5%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	border-radius: 50%;
+}
+.settings{
+	width: 30px;
+	margin-right: 5%;
+}
+.outbut{
+	width: 30px;
+}
+/*---------------------------------------------------------------*/
+/*ОСНОВНАЯ ИНФА -------------------------------------------------*/
+.upload{
+	margin-left: 7%;
+	margin-top: 5%;
+	height: 300px;
+	display: inline-block;
+  color: gray;
+  background-color: #ffffff;
+  padding: .2em 2em;
+  outline: none;
+  border-radius: 6px;
+	box-shadow: 0px 0px 2px gray;
+  transition: 0.2s;
+}
+.upload:hover{
+	background-color: #f2f3f2;
+}
+.profile_info{
+	margin-top: 5%;
+	height: 285px;
+	display: inline-block;
+	width: 54%;
+	margin-left: 5.5%;
+	padding-top: 20px;
+  color: black;
+  background-color: #ffffff;
+  border-radius: 6px;
+	box-shadow: 0px 0px 2px gray;
+}
+.username{
+	font-size: 600%;
+	margin: 0;
+	margin-left: 15%;
+	margin-right: 15%;
+	display: inline-block;
+}
+.avatar_profile{
+	display: inline-block;
+	width: 230px;
+	height: 230px;
+	margin-bottom: -7%;
+	margin-right: 5%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	border-radius: 50%;
+}
+.col_photo{
+	display: block;
+	font-size: 140%;
+	margin-left: 15%;
+}
+/*----------------------------------------------------------------*/
+/*ФОТО------------------------------------------------------------*/
+.conteiner{
+	padding-top: 5%;
+	padding-left: 0%;
+	height: 5000px;
+}
+.item{
+	width: 450px;
+	margin-left: 7%;
+	background-color: #ffffff;
+	display: inline-block;
+	border-radius: 6px;
+	box-shadow: 0px 0px 2px gray;
+	margin-bottom: 5%;
+	padding-bottom: 1%;
+}
+.item:hover{
+	background-color: #f2f3f2;
+}
+.item>img{
+	width: 100%;
+	margin-bottom: 5%;
+	border-radius: 6px 6px 0 0;
+	transition-duration: .3s;
+	transition-property: transform;
+}
+.item>.author{
+	margin-left: 20px;
+	font-size: 120%;
+}
+.item>.date{
+	margin-left: 20px;
+	font-size: 120%;
+}
+.item>.categories{
+	margin-left: 20px;
+	font-size: 120%;
+}
+.item>img:hover{
+	cursor: zoom-in;
+	transition-duration: .3s;
+	transform: scale(1.5);
+}
+.dell{
+	cursor: pointer;
+	margin-left: 20px;
+	margin-top: 20px;
+	display: inline-block;
+  color: gray;
+  padding: .5em 2em;
+  outline: none;
+  border: 2px solid;
+  border-radius: 1px;
+  transition: 0.2s;
+}
+.dell:hover{
+	background: rgba(255,255,255,.2); 
+}
+.dell:active{
+	 background: white;
+}
+/*------------------------------------------------------------*/

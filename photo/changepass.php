@@ -3,17 +3,17 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" href="css/profile.css">
+	<link rel="stylesheet" href="css/changepass.css">
+	<link rel="shortcut icon" href="sistem_img/logo.ico" type="image/x-icon">
 	<link href="https://fonts.googleapis.com/css?family=Amatic+SC:700&display=swap" rel="stylesheet">
-		<script src="js/jquery-3.3.1.min.js"></script>
-		<script src="js/changepass.js"></script>
-	<title>Change password</title>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/changepass.js"></script>
+	<title>Изменение пароля</title>
 </head>
 <body>
 	<nav>
 			<a href="index.php" class="logo"><img src="sistem_img/logo.png" alt="" class="logo"></a>
 			<div class="profile">
-				<a href='index.php' style="margin-right: 5%;">На главную</a>
 				<?php
 				$cov = '"';
 					if ($_SESSION["user_name"]){
@@ -38,19 +38,26 @@
 		<br>
 		<br>
 		<br>
+	<form action="" method="POST" class="settings_div">
+		<input id="open1" type="password" name="oldpass" placeholder="Старый пароль" class="oldpass" required style="display: inline">
+		
+		<div class="open1" type="button"></div><br>
+		<input id="open2" type="password" name="newpass" placeholder="Новый пароль" class="newpass" required style="display: inline">
+		
+		<div class="open2" type="button"></div><br>
+		<input id="open3" type="password" name="repeatpass" placeholder="Повторите новый пароль пароль" class="repeatpass" required style="display: inline">
+		
+		<div class="open3" type="button"></div><br>
+		<p class="one" style="display: inline;"></p><br>
+		<p class="same" style="display: inline;"></p><br>
+		<p class="three" style="display: inline;"></p><br>
+		<p class="ch" style="display: inline;"></p><br>
+	</form>
 	<form action="changepasssc.php" method="POST">
-		<input id="open1" type="password" name="oldpass" placeholder="Старый пароль" class="oldpass" required style="display: inline";>
-		<p class="one" style="display: inline;"></p>
-		<button class="open1">Показать пароль</button><br>
-		<input id="open2" type="password" name="newpass" placeholder="Новый пароль" class="newpass" required style="display: inline";>
-		<p class="two" style="display: inline;"></p>
-		<p class="same" style="display: inline;"></p>
-		<button class="open2">Показать пароль</button><br>
-		<input id="open3" type="password" name="repeatpass" placeholder="Повторите новый пароль пароль" class="repeatpass" required style="display: inline";>
-		<p class="three" style="display: inline;"></p>
-		<p class="ch" style="display: inline;"></p>
-		<button class="open3">Показать пароль</button><br>
-		<button name="change" class="change">Сменить пароль</button>
+		<input id="open1" type="hidden" name="oldpass" placeholder="Старый пароль" class="oldpass_help" required style="display: inline">
+		<input id="open2" type="hidden" name="newpass" placeholder="Новый пароль" class="newpass_help" required style="display: inline">
+		<input id="open3" type="hidden" name="repeatpass" placeholder="Повторите новый пароль пароль" class="repeatpass_help" required style="display: inline">
+		<input type="submit" value="Сменить пароль" name="but" class="but">
 	</form>
 </body>
 </html>

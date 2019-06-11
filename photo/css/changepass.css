@@ -1,0 +1,231 @@
+html, body{
+	padding: 0;
+	margin: 0;
+	min-width: 100%;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	background-color: #fafafa;
+}
+html, body{
+	padding: 0;
+	margin: 0;
+	min-width: 100%;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	background-color: #fafafa;
+}
+/* МЕНЮ -------------------------------------------------------*/
+.logo{
+	float: left;
+	margin: 0;
+	margin-top: -1%;
+	margin-left: 5.5%;
+	width: 25%;
+}
+nav{
+	width: 100%;
+	height: 50px;
+	background-color: #D4D4D4;
+	opacity: 0.85;
+	padding-top: 25px;
+	position: fixed;
+	
+}
+.profile{
+	width: 22%;
+	margin-top: -0.5%;
+	margin-right: 0%;
+	float: right;
+}
+.loginorreg{
+	width: 35%;
+	margin-top: -0.5%;
+	margin-right: 71%;
+	float: right;
+}
+.to_top{
+	font-size: 155%;
+}
+.to_profile{
+	font-size: 155%;
+}
+nav>div>a{
+	text-decoration: none;
+	color: #070707;
+	font-size: 190%;
+}
+nav>div>div>a{
+	text-decoration: none;
+	color: #070707;
+	font-size: 190%;
+}
+.avatar{
+	display: inline-block;
+	width: 45px;
+	height: 45px;
+	margin-bottom: -10px;
+	margin-right: 5%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	border-radius: 50%;
+}
+.settings{
+	width: 30px;
+	margin-right: 5%;
+}
+.outbut{
+	width: 30px;
+}
+/*---------------------------------------------------------------*/
+/*ФОРМА----------------------------------------------------------*/
+form.text{
+	width: 20%;
+	padding-top: 1%;
+	padding-left: 1%;
+	padding-right: 1%;
+	margin-left: 40%;
+	margin-top: 12%;
+	height: 500px;
+	display: inline-block;
+  color: black;
+  background-color: #ffffff;
+  border-radius: 6px;
+	box-shadow: 0px 0px 2px gray;
+	position: absolute;
+}
+.oldpass[type="password"]{
+	border-radius: 0;
+	border: 0;
+	box-shadow: 0px 0px 2px gray;
+	margin-left: 15%;
+	width: 70%;
+	color: black;
+	position: relative;
+}
+.oldpass[type="text"]{
+	border-radius: 0;
+	border: 0;
+	box-shadow: 0px 0px 2px gray;
+	margin-left: 15%;
+	width: 70%;
+	color: black;
+	position: relative;
+}
+.newpass[type="password"]{
+	border-radius: 0;
+	border: 0;
+	box-shadow: 0px 0px 2px gray;
+	margin-left: 15%;
+	width: 70%;
+	color: black;
+	position: relative;
+}
+.newpass[type="text"]{
+	border-radius: 0;
+	border: 0;
+	box-shadow: 0px 0px 2px gray;
+	margin-left: 15%;
+	width: 70%;
+	color: black;
+	position: relative;
+}
+.repeatpass[type="password"]{
+	border-radius: 0;
+	border: 0;
+	box-shadow: 0px 0px 2px gray;
+	margin-left: 15%;
+	width: 70%;
+	color: black;
+	position: relative;
+	margin-bottom: 30px;
+}
+.repeatpass[type="text"]{
+	border-radius: 0;
+	border: 0;
+	box-shadow: 0px 0px 2px gray;
+	margin-left: 15%;
+	width: 70%;
+	color: black;
+	position: relative;
+	margin-bottom: 30px;
+}
+.open1{
+	background-image: url(../sistem_img/show.png);
+	background-position: center;
+	background-size: cover;
+	display: inline-block;
+	width: 8%;
+	height: 8%;
+	position: relative;
+}
+.open2{
+	background-image: url(../sistem_img/show.png);
+	background-position: center;
+	background-size: cover;
+	display: inline-block;
+	width: 8%;
+	height: 8%;
+	position: relative;
+}
+.open3{
+	background-image: url(../sistem_img/show.png);
+	background-position: center;
+	background-size: cover;
+	display: inline-block;
+	width: 8%;
+	height: 8%;
+	position: relative;
+}
+.one{
+	margin-left: 17%;
+	font-size: 13px;
+	width: 89%;
+}
+.same{
+	margin-left: 17%;
+	font-size: 13px;
+	width: 89%;
+}
+.three{
+	margin-left: 17%;
+	font-size: 13px;
+	width: 89%;
+}
+.ch{
+	margin-left: 17%;
+	font-size: 13px;
+	width: 89%;
+}
+.but[type="submit"]{
+	margin-left: 47%;
+	margin-top: 30%;
+	cursor: pointer;
+	display: inline-block;
+  color: gray;
+  padding: .5em 2em;
+  outline: none;
+  border: 2px solid;
+  border-radius: 1px;
+  transition: 0.2s;
+  position: relative;
+}
+.but[type="submit"]:hover{
+	background: rgba(255,255,255,.2); 
+}
+.but[type="submit"]:active{
+	 background: white;
+}
+.settings_div{
+	width: 20%;
+	padding-top: 1%;
+	padding-left: 1%;
+	padding-right: 1%;
+	margin-left: 40%;
+	margin-top: 12%;
+	height: 400px;
+	display: inline-block;
+  color: black;
+  background-color: #ffffff;
+  border-radius: 6px;
+	box-shadow: 0px 0px 2px gray;
+	position: absolute;
+}

@@ -1,3 +1,22 @@
+<?php require_once('connectDB.php'); session_start(); $login = $_SESSION["user_name"]; ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="shortcut icon" href="sistem_img/logo.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/php_text.css">
+	<link href="https://fonts.googleapis.com/css?family=Amatic+SC:700&display=swap" rel="stylesheet">
+	<title>Удаление аккаунта</title>
+</head>
+<body>
+<?php
+	if ($login) {
+	}else{
+		echo "<p class='php_text' style='margin-left: 43%;'>Вы не вошли в аккаунт!</p>";
+		echo '<meta http-equiv="Refresh" content=" 2 ; URL = http://photo/index.php">';
+		exit();
+	}
+?>
 <?php
 				require_once('connectDB.php');
 				session_start();
@@ -21,12 +40,14 @@
 						if (file_exists("users/"."$login"."/")) {
 						rmdir("users/"."$login"."/");
 						}
-						echo "<p style='dispay: block; margin-left: 40%; font-size: 50px;'>Аккаунт успешно удален!</p>";
+						echo "<p class='php_text' style='margin-left: 42%;'>Аккаунт успешно удален!</p>";
 						echo '<meta http-equiv="Refresh" content=" 1 ; URL = http://photo/index.php">';
 					}else{
-						echo "Вы не вошли в аккаунт! <br>";
+						echo "<p class='php_text' style='margin-left: 43%;'>Вы не вошли в аккаунт!</p> <br>";
 						echo '<a href="profile.php" style="color: #070707;">Войти в аккаунт.</a>';
 					}
 						$_SESSION["user_name"] = null;
 				}
 ?>
+</body>
+</html>
