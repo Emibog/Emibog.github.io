@@ -11,11 +11,11 @@
 	<head>
 		<meta charset="UTF-8">
 		<link rel="shortcut icon" href="sistem_img/logo.ico" type="image/x-icon">
-		<link rel="stylesheet" href="css/login.css">
+		<link rel="stylesheet" href="css/forgotpass.css">
 		<link href="https://fonts.googleapis.com/css?family=Amatic+SC:700&display=swap" rel="stylesheet">
 		<script src="js/jquery-3.3.1.min.js"></script>
-		<script src="js/login.js"></script>
-		<title>Войти</title>
+		<script src="js/forgotpass.js"></script>
+		<title>Восстановление пароля</title>
 	</head>
 	<body>
 		<nav>
@@ -42,19 +42,13 @@
 			</div>
 		</nav>
 		<br>
-		<form action="login_script.php" method="POST" class="text">
-			<h1 class="text_login">Войти</h1>
-			<input type="text" name="login" placeholder="Логин" class="login" required><br>
-			<input id="open1" type="password" name="pswrd" placeholder="Пароль" class="password" required style="display: inline">
-			<div class="open1" type="button"></div><br>
-			<a href="forgotpass.php" class="changepass">Не помню пароль</a>
-			<p class="two"></p>
-			<p class="one"></p>
+		<form action="" method="POST" class="text">
+		<h1>Введите email для восстановления пароля</h1>
+		<input type="email" name="email" placeholder="Введите ваш email" class="email" required><br>
+	</form>
+	<form action="forgotpasssc.php" method="POST" class="text_help">
+			<input type="hidden" name="email" placeholder="Введите ваш email" class="email_help">
+			<input type="submit" value="Подтвердить" name="but" class="but">
 		</form>
-		<form action="login_script.php" method="POST">
-			<input type="hidden" name="login" placeholder="Логин" class="login_help">
-			<input id="open1" type="hidden" name="pswrd" placeholder="Пароль" class="password_help" required style="display: inline">
-			<input type="submit" value="Войти" name="but" class="but">
-		</form>
-	</body>
-	</html>
+</body>
+</html>

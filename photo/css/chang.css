@@ -5,6 +5,13 @@ html, body{
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 	background-color: #fafafa;
 }
+html, body{
+	padding: 0;
+	margin: 0;
+	min-width: 100%;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	background-color: #fafafa;
+}
 /* МЕНЮ -------------------------------------------------------*/
 .logo{
 	float: left;
@@ -71,19 +78,29 @@ nav>div>div>a{
 /*---------------------------------------------------------------*/
 /*ФОРМА----------------------------------------------------------*/
 form.text{
-	width: 15%;
+	width: 20%;
 	padding-top: 1%;
 	padding-left: 1%;
 	padding-right: 1%;
 	margin-left: 40%;
 	margin-top: 12%;
-	height: 285px;
+	height: 300px;
 	display: inline-block;
   color: black;
   background-color: #ffffff;
   border-radius: 6px;
 	box-shadow: 0px 0px 2px gray;
 	position: absolute;
+}
+
+.email[type="email"]{
+	border-radius: 0;
+	border: 0;
+	box-shadow: 0px 0px 2px gray;
+	margin-left: 15%;
+	width: 70%;
+	color: black;
+	position: relative;
 }
 .login[type="text"]{
 	border-radius: 0;
@@ -94,7 +111,7 @@ form.text{
 	color: black;
 	position: relative;
 }
-.password[type="password"]{
+.one[type="password"]{
 	border-radius: 0;
 	border: 0;
 	box-shadow: 0px 0px 2px gray;
@@ -103,7 +120,73 @@ form.text{
 	color: black;
 	position: relative;
 }
-.password[type="text"]{
+.one[type="text"]{
+	border-radius: 0;
+	border: 0;
+	box-shadow: 0px 0px 2px gray;
+	margin-left: 15%;
+	width: 70%;
+	color: black;
+	position: relative;
+}
+.repeatpass[type="password"]{
+	border-radius: 0;
+	border: 0;
+	box-shadow: 0px 0px 2px gray;
+	margin-left: 15%;
+	width: 70%;
+	color: black;
+	position: relative;
+}
+.repeatpass[type="text"]{
+	border-radius: 0;
+	border: 0;
+	box-shadow: 0px 0px 2px gray;
+	margin-left: 15%;
+	width: 70%;
+	color: black;
+	position: relative;
+}
+
+.open2{
+	background-image: url(../sistem_img/show.png);
+	background-position: center;
+	background-size: cover;
+	display: inline-block;
+	width: 8%;
+	height: 8%;
+	position: relative;
+}
+.open3{
+	background-image: url(../sistem_img/show.png);
+	background-position: center;
+	background-size: cover;
+	display: inline-block;
+	width: 8%;
+	height: 8%;
+	position: relative;
+}
+.two{
+	margin-left: 17%;
+	font-size: 13px;
+	width: 89%;
+}
+.same{
+	margin-left: 17%;
+	font-size: 13px;
+	width: 89%;
+}
+.three{
+	margin-left: 17%;
+	font-size: 13px;
+	width: 89%;
+}
+.captcha{
+	margin-left: 30%;
+	margin-top: -10px;
+	width: 40%;
+}
+.enter_capcha[type="text"]{
 	border-radius: 0;
 	border: 0;
 	box-shadow: 0px 0px 2px gray;
@@ -113,8 +196,8 @@ form.text{
 	position: relative;
 }
 .but[type="submit"]{
-	margin-left: 46%;
-	margin-top: 25%;
+	margin-left: 47.5%;
+	margin-top: 26%;
 	cursor: pointer;
 	display: inline-block;
   color: gray;
@@ -130,29 +213,4 @@ form.text{
 }
 .but[type="submit"]:active{
 	 background: white;
-}
-.changepass{
-	text-decoration: none;
-	color: #070707;
-	font-size: 80%;
-	margin-left: 15%;
-}
-.open1{
-	background-image: url(../sistem_img/show.png);
-	background-position: center;
-	background-size: cover;
-	display: inline-block;
-	width: 8%;
-	height: 8%;
-	position: relative;
-}
-.one{
-	margin-left: 7%;
-	font-size: 13px;
-	width: 89%;
-}
-.two{
-	margin-left: 7%;
-	font-size: 13px;
-	width: 89%;
 }
