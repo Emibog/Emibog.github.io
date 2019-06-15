@@ -30,16 +30,17 @@
 						mail("$user_email", 'Ваш аккаунт был полность удален с Ginvaellaest.ru!', "$login, Ваш аккаунт упешно удален!\r\nСпасибо, что были с нами!");
 						mysqli_query($connect, "DELETE FROM `users` WHERE `login` = '$log'");
 						
-						$var = scandir("users/$login/");
-						$length = sizeof($var);					
-						for($i = 2; $i < $length; $i++){
-							$name_file = $var[$i];
-							mysqli_query($connect, "DELETE FROM `photo` WHERE `name` = '$name_file'");
-							unlink("users/$login/$name_file");
-						}
-						if (file_exists("users/"."$login"."/")) {
-						rmdir("users/"."$login"."/");
-						}
+						$path = "users/$log/";
+						function rmRec($path) {
+					  if (is_file($path)) return unlink($path);
+					  if (is_dir($path)) {
+					    foreach(scandir($path) as $p) if (($p!='.') && ($p!='..'))
+					      rmRec($path.DIRECTORY_SEPARATOR.$p);
+					    return rmdir($path); 
+					    }
+					  return false;
+					  }
+					  rmRec($path);
 						echo "<p class='php_text' style='margin-left: 42%;'>Аккаунт успешно удален!</p>";
 						echo '<meta http-equiv="Refresh" content=" 1 ; URL = http://photo/index.php">';
 					}else{

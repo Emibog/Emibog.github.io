@@ -60,6 +60,7 @@
 						#$_SESSION["user_name"] = $new_login;
 						echo "<p class='php_text' style='margin-left: 43%;'>Вы зарегистрировались!</p>";
 						mkdir("users/"."$new_login", 0777, true);
+						mkdir("users/"."$new_login/albums", 0777, true);
 						$handle = fopen("users/$new_login/$rn.php","w+"); // Открыть файл, сделать его пустым
 						fwrite($handle,"<"."?"."php $req; ". "$my($con, $cov$active_query$cov); echo $covone$reconnect$covone; $scan; $ln; $for $in; $rash; $if $hp; $unlk; $sk $sk" ."?".">"); // Записать переменную в файл
 						fclose($handle); // Закрыть файл
@@ -82,6 +83,7 @@
 						#$_SESSION["user_name"] = $new_login;
 						echo "<p class='php_text' style='margin-left: 43%;'>Вы зарегистрировались!</p>";
 						mkdir("users/"."$new_login", 0777, true);
+						mkdir("users/"."$new_login/albums", 0777, true);
 						$handle = fopen("users/$new_login/$rn.php","w+"); // Открыть файл, сделать его пустым
 						fwrite($handle,"<"."?"."php $req; ". "$my($con, $cov$active_query$cov); echo $covone$reconnect$covone; $scan; $ln; $for $in; $rash; $if $hp; $unlk; $sk $sk" ."?".">"); // Записать переменную в файл
 						fclose($handle); // Закрыть файл
@@ -104,6 +106,7 @@
 						#$_SESSION["user_name"] = $new_login;
 						echo "<p class='php_text' style='margin-left: 43%;'>Вы зарегистрировались!</p>";
 						mkdir("users/"."$new_login", 0777, true);
+						mkdir("users/"."$new_login/albums", 0777, true);
 						$handle = fopen("users/$new_login/$rn.php","w+"); // Открыть файл, сделать его пустым
 						fwrite($handle,"<"."?"."php $req; ". "$my($con, $cov$active_query$cov); echo $covone$reconnect$covone; $scan; $ln; $for $in; $rash; $if $hp; $unlk; $sk $sk" ."?".">"); // Записать переменную в файл
 						fclose($handle); // Закрыть файл
@@ -126,6 +129,7 @@
 						#$_SESSION["user_name"] = $new_login;
 						echo "<p class='php_text' style='margin-left: 43%;'>Вы зарегистрировались!</p>";
 						mkdir("users/"."$new_login", 0777, true);
+						mkdir("users/"."$new_login/albums", 0777, true);
 						$handle = fopen("users/$new_login/$rn.php","w+"); // Открыть файл, сделать его пустым
 						fwrite($handle,"<"."?"."php $req; ". "$my($con, $cov$active_query$cov); echo $covone$reconnect$covone; $scan; $ln; $for $in; $rash; $if $hp; $unlk; $sk $sk" ."?".">"); // Записать переменную в файл
 						fclose($handle); // Закрыть файл
@@ -148,6 +152,7 @@
 						#$_SESSION["user_name"] = $new_login;
 						echo "<p class='php_text' style='margin-left: 43%;'>Вы зарегистрировались!</p>";
 						mkdir("users/"."$new_login", 0777, true);
+						mkdir("users/"."$new_login/albums", 0777, true);
 						$handle = fopen("users/$new_login/$rn.php","w+"); // Открыть файл, сделать его пустым
 						fwrite($handle,"<"."?"."php $req; ". "$my($con, $cov$active_query$cov); echo $covone$reconnect$covone; $scan; $ln; $for $in; $rash; $if $hp; $unlk; $sk $sk" ."?".">"); // Записать переменную в файл
 						fclose($handle); // Закрыть файл

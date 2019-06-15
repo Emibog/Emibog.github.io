@@ -92,63 +92,63 @@
 				</p>
 			</div>
 			<div class="conteiner">
+				<h2 class="my_photo">Мои фото</h2><h2 class="my_albums">Мои альбомы</h2>
 				<div class="content">
 					<?php
+							$idres = mysqli_query($connect, "SELECT * FROM `photo` WHERE `author` = '$login' ORDER BY `id` DESC");
+							while($id = mysqli_fetch_assoc($idres)){
+							$cat = $id['categories'];
+							$categoriesres = mysqli_query($connect, "SELECT `title` FROM `categories` WHERE `id` = '$cat'");
+							$categories = mysqli_fetch_assoc($categoriesres)['title'];
+							$hlp = $id['id'];
+							$dateres = mysqli_query($connect, "SELECT `date` FROM `photo` WHERE `id` = '$hlp'");
+							$datetab = mysqli_fetch_assoc($dateres)['date'];
+							$datepre = mysqli_query($connect, "SELECT DAY('$datetab')");
+							$monthpre = mysqli_query($connect, "SELECT MONTH('$datetab')");
+							$yearpre = mysqli_query($connect, "SELECT YEAR('$datetab')");
+							$arrdate = "DAY('".$datetab."')";
+							$arrmonth = "MONTH('".$datetab."')";
+							$arryear = "YEAR('".$datetab."')";
+							$date = mysqli_fetch_assoc($datepre)["$arrdate"];
+							$month = mysqli_fetch_assoc($monthpre)["$arrmonth"];
+							$year = mysqli_fetch_assoc($yearpre)["$arryear"];
+							if (strlen($date) <= 1) {
+								$date = "0".$date;
+							}else{}
+							if (strlen($month) <= 1) {
+								$month = "0".$month;
+							}else{}
+								if ($id['hidden'] ==  NULL) {
+									echo "<div class='item' id='".$id['id']."'>
+											<img src='users/".$id['author']."/".$id['name']."'".">
+											<span class='author'>Автор: ".$id['author']."</span>
+											<br>
+											<span class='date'>Дата публикации: ".$date."-".$month."-".$year."</span>
+											<br>
+											<span class='categories'>Категория: ".$categories."</span>
+											<form action='' method='POST'>
+												<input type='hidden' value='' class='for_id' name='forid'>
+												<input type='submit' value='Удалить фото'' name='delphoto' class='dell' id='".$id['id']."'>
+											</form>
 
-				$idres = mysqli_query($connect, "SELECT * FROM `photo` WHERE `author` = '$login' ORDER BY `id` DESC");
-				while($id = mysqli_fetch_assoc($idres)){
-				$cat = $id['categories'];
-				$categoriesres = mysqli_query($connect, "SELECT `title` FROM `categories` WHERE `id` = '$cat'");
-				$categories = mysqli_fetch_assoc($categoriesres)['title'];
-				$hlp = $id['id'];
-				$dateres = mysqli_query($connect, "SELECT `date` FROM `photo` WHERE `id` = '$hlp'");
-				$datetab = mysqli_fetch_assoc($dateres)['date'];
-				$datepre = mysqli_query($connect, "SELECT DAY('$datetab')");
-				$monthpre = mysqli_query($connect, "SELECT MONTH('$datetab')");
-				$yearpre = mysqli_query($connect, "SELECT YEAR('$datetab')");
-				$arrdate = "DAY('".$datetab."')";
-				$arrmonth = "MONTH('".$datetab."')";
-				$arryear = "YEAR('".$datetab."')";
-				$date = mysqli_fetch_assoc($datepre)["$arrdate"];
-				$month = mysqli_fetch_assoc($monthpre)["$arrmonth"];
-				$year = mysqli_fetch_assoc($yearpre)["$arryear"];
-				if (strlen($date) <= 1) {
-					$date = "0".$date;
-				}else{}
-				if (strlen($month) <= 1) {
-					$month = "0".$month;
-				}else{}
-					if ($id['hidden'] ==  NULL) {
-						echo "<div class='item' id='".$id['id']."'>
-								<img src='users/".$id['author']."/".$id['name']."'".">
-								<span class='author'>Автор: ".$id['author']."</span>
-								<br>
-								<span class='date'>Дата публикации: ".$date."-".$month."-".$year."</span>
-								<br>
-								<span class='categories'>Категория: ".$categories."</span>
-								<form action='' method='POST'>
-									<input type='hidden' value='' class='for_id' name='forid'>
-									<input type='submit' value='Удалить фото'' name='delphoto' class='dell' id='".$id['id']."'>
-								</form>
+										</div>";
+									}else{
+										echo "<div class='item' id='".$id['id']."'>
+											<img src='users/".$id['author']."/".$id['name']."'".">
+											<span class='author'>Автор: ".$id['author']."</span>
+											<br>
+											<span class='date'>Дата публикации: ".$date."-".$month."-".$year."</span>
+											<br>
+											<span class='categories'>Категория: ".$categories."</span>
+											<p class='categories'>Это фото видите только вы.</p>
+											<form action='' method='POST'>
+												<input type='hidden' value='' class='for_id' name='forid'>
+												<input type='submit' value='Удалить фото'' name='delphoto' class='dell' id='".$id['id']."'>
+											</form>
 
-							</div>";
-						}else{
-							echo "<div class='item' id='".$id['id']."'>
-								<img src='users/".$id['author']."/".$id['name']."'".">
-								<span class='author'>Автор: ".$id['author']."</span>
-								<br>
-								<span class='date'>Дата публикации: ".$date."-".$month."-".$year."</span>
-								<br>
-								<span class='categories'>Категория: ".$categories."</span>
-								<p class='categories'>Это фото видите только вы.</p>
-								<form action='' method='POST'>
-									<input type='hidden' value='' class='for_id' name='forid'>
-									<input type='submit' value='Удалить фото'' name='delphoto' class='dell' id='".$id['id']."'>
-								</form>
-
-							</div>";
-						}
-				}
+										</div>";
+									}
+							}
 
 				if (isset($_POST['delphoto'])) {
 					$dellid = $_POST['forid'];
@@ -163,6 +163,19 @@
 				}
 
 					?>
+				</div>
+				<div class="albums">
+					<div class="add_album"><a href="create_album.php"><img src="sistem_img/new_albums.png" alt="" class="plus"><h2 class="text_add">Создать новый альбом</h2></a></div>
+					<?php
+						foreach (scandir("users/".$login."/albums") as $folder) {
+							 if (($folder !='.') && ($folder !='..') && ($folder !='index.php') && ($folder !='downloadfilealbum.php')){
+								$photo = scandir("users/".$login."/albums"."/".$folder);
+								require('style_albums.php');
+							}
+
+					}
+					?>
+				</div>
 				</div>
 			</div>
 		</body>
