@@ -2,13 +2,13 @@ a{
 	margin-left: 20px;
 	margin-top: 10px;
 	display: block;
-	width: 400px;
-	font-size: 20px;
+	width: 700px;
+	font-size: 70px;
 	text-decoration: none;
 	color: #D72767;
 	transition: .1s;
 }
 a:hover{
 	transition: .1s;
-	font-size: 30px;
+	font-size: 80px;
 }
