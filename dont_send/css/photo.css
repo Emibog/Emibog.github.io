@@ -3,20 +3,20 @@ body{
 }
 img{
 	display: block;
-  margin-left: auto;
-  margin-right: auto;
+  	margin-left: auto;
+  	margin-right: auto;
 	height: 750px;
 	transition: .3s;
 }
-img:hover {
+	img:hover {
 	transition: .3s;
-  transform: scale(1.3);
+  	transform: scale(1.3);
 }
 a{
 	display: block;
 	margin-left: auto;
-  margin-right: auto;
-	width: 700px;
+  	margin-right: auto;
+	width: 400px;
 	font-size: 70px;
 	text-decoration: none;
 	color: #D72767;
