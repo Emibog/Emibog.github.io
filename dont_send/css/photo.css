@@ -1,3 +1,6 @@
+body{
+	background-color: black;
+}
 img{
 	display: block;
   margin-left: auto;
@@ -13,7 +16,7 @@ a{
 	display: block;
 	margin-left: auto;
   margin-right: auto;
-	width: 400px;
+	width: 700px;
 	font-size: 70px;
 	text-decoration: none;
 	color: #D72767;
