@@ -8,7 +8,7 @@ img{
 	height: 750px;
 	transition: .3s;
 }
-	img:hover {
+img:hover {
 	transition: .3s;
   	transform: scale(1.3);
 }
