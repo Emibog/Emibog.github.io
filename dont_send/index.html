@@ -7,7 +7,8 @@
 		<script>
 			function validateForm() {
 			  let x = document.forms["pass"]["Pwd"].value;
-			  if (x == "2505") {
+			  let c = window.btoa(x)
+			  if (c == "MjUwNQ==") {
 			    window.location.href = "main.html"
 			    sessionStorage.setItem('passed', 'true');
 			  }
