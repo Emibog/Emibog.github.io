@@ -4,21 +4,23 @@
 		<meta charset="UTF-8">
 		<link rel="stylesheet" href="css/style.css">
 		<title>Main</title>
-
+		<script>
+			function validateForm() {
+			  let x = document.forms["pass"]["Pwd"].value;
+			  if (x == "2505") {
+			    window.location.href = "main.html"
+			    sessionStorage.setItem('passed', 'true');
+			  }
+			} 
+		</script>
 	</head>
 	<body>
-		<a href="Alina.html">Алина</a>
-		<a href="Galya.html">Галя</a>
-		<a href="Dasha_Shugurova.html">Даша Шугурова</a>
-		<a href="Lena_Lykashkina.html">Лена Лукашкина</a>
-		<a href="Lena_Romanova.html">Лена Романова</a>
-		<a href="Lera.html">Лера</a>
-		<a href="Oksana.html">Оксана</a>
-		<a href="Rita.html">Рита</a>
-		<a href="Sonya.html">Соня</a>
-		<a href="Tanya.html">Таня</a>
-		<a href="Tanya_A.html">Таня А</a>
-		<a href="Erika.html">Эрика</a>
-		<a href="Ulya.html">Юля</a>
+		<FORM NAME="pass" method="post">
+    <TABLE>
+				<INPUT TYPE="password" NAME="Pwd" SIZE=20
+                       onFocus="this.select();">
+    </TABLE>
+    <INPUT TYPE="button" VALUE="Готово" onClick="return validateForm()">
+</FORM>
 	</body>
 </html>

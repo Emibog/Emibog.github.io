@@ -4,9 +4,14 @@
 		<meta charset="UTF-8">
 		<link rel="stylesheet" href="css/photo.css">
 		<title>Галя</title>
+		<script>
+			if(sessionStorage.getItem("passed") != "true"){
+				window.location.href = "index.html";
+			}
+		</script>
 	</head>
 	<body>
-		<a href="index.html">На главную</a>
+		<a href="main.html">На главную</a>
 		<div id="photo" style="margin-top: 100px;"></div>
 		<script>
         let photo = document.getElementById("photo"),
