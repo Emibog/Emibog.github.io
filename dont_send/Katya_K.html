@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/photo.css">
+		<title>Катя К</title>
+		<script>
+			if(sessionStorage.getItem("passed") != "true"){
+				window.location.href = "index.html";
+			}
+		</script>
+	</head>
+	<body>
+		<a href="main.html">На главную</a>
+		<div id="photo" style="margin-top: 100px;"></div>
+		<script>
+        let photo = document.getElementById("photo"),
+            s = "";
+        for (let i = 1; i <= 100; ++i) {
+            s += `<img src="img/Катя К/1 (${i}).jpg"><br />`;
+        }
+        photo.innerHTML = s;
+    </script>
+	</body>
+</html>
